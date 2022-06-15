@@ -15,14 +15,18 @@ function HomePage() {
     <div>
         {/* <Dashboard /> */}
         {/* <Settings /> */}
-        <HeroSection />
+        {/* <HeroSection />
         <OrderSummary />
         <CheckoutForm />
         <ShoppingCart />
         <PartOverview />
         <MachinesList />
         <DocumentsList />
-        <OrderFeed />
+        <OrderFeed /> */}
+        <div>Hero image</div>
+        <div>About</div>
+        <div>How it works</div>
+        <div>Sign up</div>
     </div>
   )
 }
