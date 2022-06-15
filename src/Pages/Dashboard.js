@@ -205,7 +205,7 @@ function Dashboard() {
         {/* Static sidebar for desktop */}
         <div className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0">
           {/* Sidebar component, swap this element with another sidebar if you like */}
-          <div className="flex flex-col flex-grow bg-cyan-700 pt-5 pb-4 overflow-y-auto">
+          <div className="flex flex-col flex-grow bg-[#0466c8] pt-5 pb-4 overflow-y-auto">
             <div className="flex items-center flex-shrink-0 px-4">
               <img
                 className="h-8 w-auto"

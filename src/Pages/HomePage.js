@@ -13,7 +13,7 @@ import OrderFeed from '../Components/OrderFeed'
 function HomePage() {
   return (
     <div>
-        {/* <Dashboard /> */}
+        <Dashboard />
         {/* <Settings /> */}
         {/* <HeroSection />
         <OrderSummary />
