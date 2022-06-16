@@ -23,6 +23,7 @@
   }
   ```
 */
+
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import {
@@ -39,52 +40,21 @@ import {
   UserGroupIcon,
   XIcon,
 } from '@heroicons/react/outline'
-import {
-  CashIcon,
-  CheckCircleIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-  OfficeBuildingIcon,
-  SearchIcon,
-} from '@heroicons/react/solid'
 
 const navigation = [
-  { name: 'Parts', href: 'OrderParts', icon: HomeIcon, current: true },
-  { name: 'Services', href: '#', icon: ClockIcon, current: false },
-  { name: 'Documents', href: '#', icon: ScaleIcon, current: false },
-  { name: 'Profile', href: '#', icon: CogIcon },
-  { name: 'Settings', href: '#', icon: QuestionMarkCircleIcon },
-  { name: 'Help', href: '#', icon: ShieldCheckIcon },
+  { name: 'Dashboard', href: 'Dashboard', icon: HomeIcon, current: true },
+  { name: 'Parts', href: 'Parts', icon: HomeIcon, current: true },
+  { name: 'Services', href: 'Services', icon: ClockIcon, current: false },
+  { name: 'Documents', href: 'Documents', icon: ScaleIcon, current: false },
+  { name: 'Machines', href: 'Machines', icon: CogIcon },
+  { name: 'OEMs', href: 'OEMs', icon: QuestionMarkCircleIcon },
+  { name: 'Messages', href: 'Messages', icon: ShieldCheckIcon },
 ]
 const secondaryNavigation = [
-  { name: 'Machines', href: '#', icon: CogIcon },
-  { name: 'OEMs', href: '#', icon: QuestionMarkCircleIcon },
-  { name: 'Messages', href: '#', icon: ShieldCheckIcon },
+  { name: 'Profile', href: 'Profile', icon: CogIcon },
+  // { name: 'Settings', href: 'Settings', icon: QuestionMarkCircleIcon },
+  { name: 'FAQ', href: 'FAQ', icon: ShieldCheckIcon },
 ]
-const cards = [
-  { name: 'Monthly Orders', href: '#', icon: ScaleIcon, amount: '$30,659.45' },
-  { name: 'Outstanding Orders', href: '#', icon: ScaleIcon, amount: '$3,659.45' },
-  { name: 'Other thing', href: '#', icon: ScaleIcon, amount: '$89,098.33' },
-  // More items...
-]
-const transactions = [
-  {
-    id: 1,
-    name: 'Payment to Molly Sanders',
-    href: '#',
-    amount: '$20,000',
-    currency: 'USD',
-    status: 'success',
-    date: 'July 11, 2020',
-    datetime: '2020-07-11',
-  },
-  // More transactions...
-]
-const statusStyles = {
-  success: 'bg-green-100 text-green-800',
-  processing: 'bg-yellow-100 text-yellow-800',
-  failed: 'bg-gray-100 text-gray-800',
-}
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
