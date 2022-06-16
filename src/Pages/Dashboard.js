@@ -49,17 +49,17 @@ import {
 } from '@heroicons/react/solid'
 
 const navigation = [
-  { name: 'Home', href: '#', icon: HomeIcon, current: true },
-  { name: 'Order History', href: '#', icon: ClockIcon, current: false },
-  { name: 'Balances', href: '#', icon: ScaleIcon, current: false },
-  { name: 'Cards', href: '#', icon: CreditCardIcon, current: false },
-  { name: 'Recipients', href: '#', icon: UserGroupIcon, current: false },
-  { name: 'Reports', href: '#', icon: DocumentReportIcon, current: false },
+  { name: 'Parts', href: 'OrderParts', icon: HomeIcon, current: true },
+  { name: 'Services', href: '#', icon: ClockIcon, current: false },
+  { name: 'Documents', href: '#', icon: ScaleIcon, current: false },
+  { name: 'Profile', href: '#', icon: CogIcon },
+  { name: 'Settings', href: '#', icon: QuestionMarkCircleIcon },
+  { name: 'Help', href: '#', icon: ShieldCheckIcon },
 ]
 const secondaryNavigation = [
-  { name: 'Settings', href: '#', icon: CogIcon },
-  { name: 'Help', href: '#', icon: QuestionMarkCircleIcon },
-  { name: 'Privacy', href: '#', icon: ShieldCheckIcon },
+  { name: 'Machines', href: '#', icon: CogIcon },
+  { name: 'OEMs', href: '#', icon: QuestionMarkCircleIcon },
+  { name: 'Messages', href: '#', icon: ShieldCheckIcon },
 ]
 const cards = [
   { name: 'Monthly Orders', href: '#', icon: ScaleIcon, amount: '$30,659.45' },
@@ -205,7 +205,7 @@ function Dashboard() {
         {/* Static sidebar for desktop */}
         <div className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0">
           {/* Sidebar component, swap this element with another sidebar if you like */}
-          <div className="flex flex-col flex-grow bg-[#0466c8] pt-5 pb-4 overflow-y-auto">
+          <div className="flex flex-col flex-grow bg-cyan-700 pt-5 pb-4 overflow-y-auto">
             <div className="flex items-center flex-shrink-0 px-4">
               <img
                 className="h-8 w-auto"
