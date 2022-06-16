@@ -1,59 +1,80 @@
-/*
-  This example requires Tailwind CSS v2.0+ 
-  
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  const colors = require('tailwindcss/colors')
-  
-  module.exports = {
-    // ...
-    theme: {
-      extend: {
-        colors: {
-          cyan: colors.cyan,
-        },
-      },
-    },
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
-*/
 
 import { Fragment, useState } from 'react'
+import { Disclosure } from '@headlessui/react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import {
-  BellIcon,
+  ChatAlt2Icon,
   ClockIcon,
   CogIcon,
-  CreditCardIcon,
-  DocumentReportIcon,
+  DocumentTextIcon,
   HomeIcon,
-  MenuAlt1Icon,
-  QuestionMarkCircleIcon,
-  ScaleIcon,
-  ShieldCheckIcon,
   UserGroupIcon,
+  QuestionMarkCircleIcon,
+  QrcodeIcon,
   XIcon,
 } from '@heroicons/react/outline'
 
 const navigation = [
-  { name: 'Dashboard', href: 'Dashboard', icon: HomeIcon, current: true },
-  { name: 'Parts', href: 'Parts', icon: HomeIcon, current: true },
-  { name: 'Services', href: 'Services', icon: ClockIcon, current: false },
-  { name: 'Documents', href: 'Documents', icon: ScaleIcon, current: false },
-  { name: 'Machines', href: 'Machines', icon: CogIcon },
-  { name: 'OEMs', href: 'OEMs', icon: QuestionMarkCircleIcon },
-  { name: 'Messages', href: 'Messages', icon: ShieldCheckIcon },
+  { name: 'Dashboard', icon: HomeIcon, current: false, href: 'Dashboard' },
+  {
+    name: 'Parts',
+    icon: QrcodeIcon,
+    current: false,
+    children: [
+      { name: 'Place an Order', href: 'Order_Parts' },
+      { name: 'Order History', href: 'Parts_Order_History' },
+      { name: 'Recurring Orders', href: 'Recurring_Parts' },
+    ],
+  },
+  {
+    name: 'Services',
+    icon: ClockIcon,
+    current: false,
+    children: [
+      { name: 'Request Services', href: 'Request_Services' },
+      { name: 'Services History', href: 'Services_History' },
+      { name: 'Services Calendar', href: 'Services_Calendar' },
+    ],
+  },
+  {
+    name: 'Documents',
+    icon: DocumentTextIcon,
+    current: false,
+    children: [
+      { name: 'View Documents', href: 'View_Documents' },
+      { name: 'Add Documents', href: 'Add_Documents' },
+    ],
+  },
+  {
+    name: 'Machines',
+    icon: CogIcon,
+    current: false,
+  },
+  {
+    name: 'OEMs',
+    icon: UserGroupIcon,
+    current: false,
+    children: [
+      { name: 'Companies', href: 'OEM_Companies' },
+      { name: 'Contacts', href: 'OEM_Contacts' },
+    ],
+  },
+  {
+    name: 'Messages',
+    icon: ChatAlt2Icon,
+    current: false,
+    children: [
+      { name: 'New Message', href: 'New_Messages' },
+      { name: 'View Messages', href: 'View_Messages' },
+      { name: 'Contact Admin', href: 'ContactAdmin' },
+    ],
+  },
+  { name: 'Profile', href: 'Profile', icon: CogIcon },
+  { name: 'FAQ', href: 'FAQ', icon: QuestionMarkCircleIcon },
 ]
 const secondaryNavigation = [
   { name: 'Profile', href: 'Profile', icon: CogIcon },
-  // { name: 'Settings', href: 'Settings', icon: QuestionMarkCircleIcon },
-  { name: 'FAQ', href: 'FAQ', icon: ShieldCheckIcon },
+  { name: 'FAQ', href: 'FAQ', icon: QuestionMarkCircleIcon },
 ]
 
 function classNames(...classes) {
@@ -133,7 +154,7 @@ function Navbar() {
                       {navigation.map((item) => (
                         <a
                           key={item.name}
-                          href={item.href}
+                          // href={item.href}
                           className={classNames(
                             item.current
                               ? 'bg-cyan-800 text-white'
@@ -152,7 +173,7 @@ function Navbar() {
                         {secondaryNavigation.map((item) => (
                           <a
                             key={item.name}
-                            href={item.href}
+                            // href={item.href}
                             className="group flex items-center px-2 py-2 text-base font-medium rounded-md text-cyan-100 hover:text-white hover:bg-cyan-600"
                           >
                             <item.icon className="mr-4 h-6 w-6 text-cyan-200" aria-hidden="true" />
@@ -174,46 +195,85 @@ function Navbar() {
         {/* Static sidebar for desktop */}
         <div className="hidden lg:flex lg:w-64 lg:flex-col lg:fixed lg:inset-y-0">
           {/* Sidebar component, swap this element with another sidebar if you like */}
-          <div className="flex flex-col flex-grow bg-cyan-700 pt-5 pb-4 overflow-y-auto">
+          <div className="flex flex-col flex-grow border-r border-gray-200 pt-5 pb-4 bg-white overflow-y-auto">
             <div className="flex items-center flex-shrink-0 px-4">
               <img
                 className="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/easywire-logo-cyan-300-mark-white-text.svg"
-                alt="Easywire logo"
+                src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-800-text.svg"
+                alt="Workflow"
               />
             </div>
-            <nav className="mt-5 flex-1 flex flex-col divide-y divide-cyan-800 overflow-y-auto" aria-label="Sidebar">
-              <div className="px-2 space-y-1">
-                {navigation.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className={classNames(
-                      item.current ? 'bg-cyan-800 text-white' : 'text-cyan-100 hover:text-white hover:bg-cyan-600',
-                      'group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md'
-                    )}
-                    aria-current={item.current ? 'page' : undefined}
-                  >
-                    <item.icon className="mr-4 flex-shrink-0 h-6 w-6 text-cyan-200" aria-hidden="true" />
-                    {item.name}
-                  </a>
-                ))}
-              </div>
-              <div className="mt-6 pt-6">
-                <div className="px-2 space-y-1">
-                  {secondaryNavigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="group flex items-center px-2 py-2 text-sm leading-6 font-medium rounded-md text-cyan-100 hover:text-white hover:bg-cyan-600"
-                    >
-                      <item.icon className="mr-4 h-6 w-6 text-cyan-200" aria-hidden="true" />
-                      {item.name}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </nav>
+            <div className="mt-5 flex-grow flex flex-col">
+              <nav className="flex-1 px-2 space-y-1 bg-white" aria-label="Sidebar">
+                {navigation.map((item) =>
+                  !item.children ? (
+                    <div key={item.name}>
+                      <a
+                        href={item.href}
+                        className={classNames(
+                          item.current
+                            ? 'bg-gray-100 text-gray-900'
+                            : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+                          'group w-full flex items-center pl-2 py-2 text-sm font-medium rounded-md'
+                        )}
+                      >
+                        <item.icon
+                          className={classNames(
+                            item.current ? 'text-gray-500' : 'text-gray-400 group-hover:text-gray-500',
+                            'mr-3 flex-shrink-0 h-6 w-6'
+                          )}
+                          aria-hidden="true"
+                        />
+                        {item.name}
+                      </a>
+                    </div>
+                  ) : (
+                    <Disclosure as="div" key={item.name} className="space-y-1">
+                      {({ open }) => (
+                        <>
+                          <Disclosure.Button
+                            className={classNames(
+                              item.current
+                                ? 'bg-gray-100 text-gray-900'
+                                : 'bg-white text-gray-600 hover:bg-gray-50 hover:text-gray-900',
+                              'group w-full flex items-center pl-2 pr-1 py-2 text-left text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500'
+                            )}
+                          >
+                            <item.icon
+                              className="mr-3 flex-shrink-0 h-6 w-6 text-gray-400 group-hover:text-gray-500"
+                              aria-hidden="true"
+                            />
+                            <span className="flex-1">{item.name}</span>
+                            <svg
+                              className={classNames(
+                                open ? 'text-gray-400 rotate-90' : 'text-gray-300',
+                                'ml-3 flex-shrink-0 h-5 w-5 transform group-hover:text-gray-400 transition-colors ease-in-out duration-150'
+                              )}
+                              viewBox="0 0 20 20"
+                              aria-hidden="true"
+                            >
+                              <path d="M6 6L14 10L6 14V6Z" fill="currentColor" />
+                            </svg>
+                          </Disclosure.Button>
+                          <Disclosure.Panel className="space-y-1">
+                            {item.children.map((subItem) => (
+                              <Disclosure.Button
+                                key={subItem.name}
+                                as="a"
+                                href={subItem.href}
+                                className="group w-full flex items-center pl-11 pr-2 py-2 text-sm font-medium text-gray-600 rounded-md hover:text-gray-900 hover:bg-gray-50"
+                              >
+                                {subItem.name}
+                              </Disclosure.Button>
+                            ))}
+                          </Disclosure.Panel>
+                        </>
+                      )}
+                    </Disclosure>
+                  )
+                )}
+              </nav>
+            </div>
           </div>
         </div>
       </div>
