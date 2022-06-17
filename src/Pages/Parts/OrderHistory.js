@@ -80,7 +80,7 @@ const orders = [
 
 function OrderHistory() {
   return (
-    <div className="min-h-full">
+    <div className="min-h-full pt-8 pb-24 pl-24 pr-24">
       <div className="lg:pl-64 flex flex-col flex-1">
         <div className="bg-white">
           <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:pb-24 lg:px-8">

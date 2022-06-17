@@ -32,7 +32,7 @@ function classNames(...classes) {
 
 function Contacts() {
     return (
-        <div className="min-h-full">
+        <div className="min-h-full pt-24 pb-24 pl-24 pr-24">
             <div className="lg:pl-64 flex flex-col flex-1">
                 <div className="px-4 sm:px-6 lg:px-8">
                     <div className="sm:flex sm:items-center">

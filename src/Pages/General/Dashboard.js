@@ -2,17 +2,8 @@ import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import {
   BellIcon,
-  ClockIcon,
-  CogIcon,
-  CreditCardIcon,
-  DocumentReportIcon,
-  HomeIcon,
   MenuAlt1Icon,
-  QuestionMarkCircleIcon,
   ScaleIcon,
-  ShieldCheckIcon,
-  UserGroupIcon,
-  XIcon,
 } from '@heroicons/react/outline'
 import {
   CashIcon,
@@ -27,7 +18,6 @@ const cards = [
   { name: 'Monthly Orders', href: '#', icon: ScaleIcon, amount: '$30,659.45' },
   { name: 'Outstanding Orders', href: '#', icon: ScaleIcon, amount: '$3,659.45' },
   { name: 'Other thing', href: '#', icon: ScaleIcon, amount: '$89,098.33' },
-  // More items...
 ]
 const transactions = [
   {
@@ -70,7 +60,6 @@ const transactions = [
     date: 'July 1, 2020',
     datetime: '2020-07-11',
   },
-  // More transactions...
 ]
 const statusStyles = {
   success: 'bg-green-100 text-green-800',
@@ -87,14 +76,6 @@ function Dashboard() {
 
   return (
     <>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full bg-gray-100">
-        <body class="h-full">
-        ```
-      */}
       <div className="min-h-full">
         <div className="lg:pl-64 flex flex-col flex-1">
           <div className="relative z-10 flex-shrink-0 flex h-16 bg-white border-b border-gray-200 lg:border-none">
@@ -248,6 +229,7 @@ function Dashboard() {
                   <div className="mt-6 flex space-x-3 md:mt-0 md:ml-4">
                     <button
                       type="button"
+                      href="Order_Parts"
                       className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
                     >
                       Place Order

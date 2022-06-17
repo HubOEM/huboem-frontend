@@ -49,7 +49,7 @@ function ContactAdmin() {
     const [dated, setDated] = useState(dueDates[0])
 
     return (
-                <div className="min-h-full">
+                <div className="min-h-full pt-24 pb-24 pl-24 pr-24">
                     <div className="lg:pl-64 flex flex-col flex-1">
                         <form action="#" className="relative">
                             <div className="border border-gray-300 rounded-lg shadow-sm overflow-hidden focus-within:border-indigo-500 focus-within:ring-1 focus-within:ring-indigo-500">

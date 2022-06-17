@@ -88,7 +88,7 @@ function classNames(...classes) {
 
 function ServicesCalendar() {
     return (
-        <div className="min-h-full">
+        <div className="min-h-full pt-24 pb-24 pl-24 pr-24">
             <div className="lg:pl-64 flex flex-col flex-1">
                 <div className="lg:flex lg:h-full lg:flex-col">
                     <header className="relative z-20 flex items-center justify-between border-b border-gray-200 py-4 px-6 lg:flex-none">

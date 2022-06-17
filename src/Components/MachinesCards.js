@@ -70,7 +70,7 @@ const people = [
 
 function MachinesCards() {
   return (
-    <div className="min-h-full">
+    <div className="min-h-full px-32 pt-28 pb-16">
       <div className="lg:pl-64 flex flex-col flex-1">
         <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {people.map((person) => (

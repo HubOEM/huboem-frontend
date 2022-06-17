@@ -32,7 +32,7 @@ function classNames(...classes) {
 
 function MachinesList() {
     return (
-        <div className="min-h-full">
+        <div className="min-h-full px-32 pt-16 pb-28">
             <div className="lg:pl-64 flex flex-col flex-1">
 
                 <div className="px-4 sm:px-6 lg:px-8">
