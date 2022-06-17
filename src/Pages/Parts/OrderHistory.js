@@ -4,13 +4,13 @@ const orders = [
     number: 'WU88191111',
     date: 'January 22, 2021',
     datetime: '2021-01-22',
-    invoiceHref: '#',
+    invoiceHref: 'Order_Details',
     total: '$952.00',
     products: [
       {
         id: 1,
         name: 'Machined Pen and Pencil Set',
-        href: '#',
+        href: 'Order_Details',
         price: '$70.00',
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
@@ -19,7 +19,7 @@ const orders = [
       {
         id: 2,
         name: 'Machined Pen and Pencil Set',
-        href: '#',
+        href: 'Order_Details',
         price: '$70.00',
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
@@ -28,7 +28,7 @@ const orders = [
       {
         id: 3,
         name: 'Machined Pen and Pencil Set',
-        href: '#',
+        href: 'Order_Details',
         price: '$70.00',
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
@@ -41,7 +41,7 @@ const orders = [
     number: 'UE897HE78',
     date: 'January 2, 2021',
     datetime: '2021-01-02',
-    invoiceHref: '#',
+    invoiceHref: 'Order_Details',
     total: '$238.00',
     products: [
       {

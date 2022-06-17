@@ -1,73 +1,60 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 
-const people = [
+const parts = [
     {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
+        name: 'Billy boy',
+        serialPart: '234334',
+        serialMachine: '789990',
+        company: 'Big company co',
+        quantity: '2',
+        frequency: '21',
+        price: '$45.45',
     },
     {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
+        name: 'Billy boy',
+        serialPart: '234334',
+        serialMachine: '789990',
+        company: 'Big company co',
+        quantity: '2',
+        frequency: '21',
+        price: '$45.45',
     },
     {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
+        name: 'Billy boy',
+        serialPart: '234334',
+        serialMachine: '789990',
+        company: 'Big company co',
+        quantity: '2',
+        frequency: '21',
+        price: '$45.45',
     },
     {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
+        name: 'Billy boy',
+        serialPart: '234334',
+        serialMachine: '789990',
+        company: 'Big company co',
+        quantity: '2',
+        frequency: '21',
+        price: '$45.45',
     },
     {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
+        name: 'Billy boy',
+        serialPart: '234334',
+        serialMachine: '789990',
+        company: 'Big company co',
+        quantity: '2',
+        frequency: '21',
+        price: '$45.45',
     },
     {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
+        name: 'Billy boy',
+        serialPart: '234334',
+        serialMachine: '789990',
+        company: 'Big company co',
+        quantity: '2',
+        frequency: '21',
+        price: '$45.45',
     },
-    {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
-    },
-    {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
-    },
-    {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
-    },
-    {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
-    },
-    {
-        name: 'Lindsay Walton',
-        title: 'Front-end Developer',
-        email: 'lindsay.walton@example.com',
-        role: 'Member',
-    },
-    // More people...
 ]
 
 function classNames(...classes) {
@@ -78,17 +65,17 @@ function RecurringOrders() {
     const checkbox = useRef()
     const [checked, setChecked] = useState(false)
     const [indeterminate, setIndeterminate] = useState(false)
-    const [selectedPeople, setSelectedPeople] = useState([])
+    const [selectedPart, setSelectedPart] = useState([])
 
     useLayoutEffect(() => {
-        const isIndeterminate = selectedPeople.length > 0 && selectedPeople.length < people.length
-        setChecked(selectedPeople.length === people.length)
+        const isIndeterminate = selectedPart.length > 0 && selectedPart.length < parts.length
+        setChecked(selectedPart.length === parts.length)
         setIndeterminate(isIndeterminate)
         checkbox.current.indeterminate = isIndeterminate
-    }, [selectedPeople])
+    }, [selectedPart])
 
     function toggleAll() {
-        setSelectedPeople(checked || indeterminate ? [] : people)
+        setSelectedPart(checked || indeterminate ? [] : parts)
         setChecked(!checked && !indeterminate)
         setIndeterminate(false)
     }
@@ -109,7 +96,7 @@ function RecurringOrders() {
                                 type="button"
                                 className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
                             >
-                                Add user
+                                Add part
                             </button>
                         </div>
                     </div>
@@ -117,7 +104,7 @@ function RecurringOrders() {
                         <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
                             <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
                                 <div className="relative overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
-                                    {selectedPeople.length > 0 && (
+                                    {selectedPart.length > 0 && (
                                         <div className="absolute top-0 left-12 flex h-12 items-center space-x-3 bg-gray-50 sm:left-16">
                                             <button
                                                 type="button"
@@ -149,13 +136,22 @@ function RecurringOrders() {
                                                     Name
                                                 </th>
                                                 <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                                    Title
+                                                    Part Serial
                                                 </th>
                                                 <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                                    Email
+                                                    Machine Serial
                                                 </th>
                                                 <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                                    Role
+                                                    Company
+                                                </th>
+                                                <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                                    Quantity
+                                                </th>
+                                                <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                                    Duration
+                                                </th>
+                                                <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                                    Price
                                                 </th>
                                                 <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
                                                     <span className="sr-only">Edit</span>
@@ -163,22 +159,22 @@ function RecurringOrders() {
                                             </tr>
                                         </thead>
                                         <tbody className="divide-y divide-gray-200 bg-white">
-                                            {people.map((person) => (
-                                                <tr key={person.email} className={selectedPeople.includes(person) ? 'bg-gray-50' : undefined}>
+                                            {parts.map((part) => (
+                                                <tr key={part.email} className={selectedPart.includes(part) ? 'bg-gray-50' : undefined}>
                                                     <td className="relative w-12 px-6 sm:w-16 sm:px-8">
-                                                        {selectedPeople.includes(person) && (
+                                                        {selectedPart.includes(part) && (
                                                             <div className="absolute inset-y-0 left-0 w-0.5 bg-indigo-600" />
                                                         )}
                                                         <input
                                                             type="checkbox"
                                                             className="absolute left-4 top-1/2 -mt-2 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 sm:left-6"
-                                                            value={person.email}
-                                                            checked={selectedPeople.includes(person)}
+                                                            value={part.serialPart && part.company}
+                                                            checked={selectedPart.includes(part)}
                                                             onChange={(e) =>
-                                                                setSelectedPeople(
+                                                                setSelectedPart(
                                                                     e.target.checked
-                                                                        ? [...selectedPeople, person]
-                                                                        : selectedPeople.filter((p) => p !== person)
+                                                                        ? [...selectedPart, part]
+                                                                        : selectedPart.filter((p) => p !== part)
                                                                 )
                                                             }
                                                         />
@@ -186,17 +182,20 @@ function RecurringOrders() {
                                                     <td
                                                         className={classNames(
                                                             'whitespace-nowrap py-4 pr-3 text-sm font-medium',
-                                                            selectedPeople.includes(person) ? 'text-indigo-600' : 'text-gray-900'
+                                                            selectedPart.includes(part) ? 'text-indigo-600' : 'text-gray-900'
                                                         )}
                                                     >
-                                                        {person.name}
+                                                        {part.name}
                                                     </td>
-                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
-                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
-                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.serialMachine}</td>
+                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.serialPart}</td>
+                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.company}</td>
+                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.quantity}</td>
+                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.frequency}</td>
+                                                    <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.price}</td>
                                                     <td className="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                                                         <a href="#" className="text-indigo-600 hover:text-indigo-900">
-                                                            Edit<span className="sr-only">, {person.name}</span>
+                                                            Edit<span className="sr-only">, {part.name}</span>
                                                         </a>
                                                     </td>
                                                 </tr>

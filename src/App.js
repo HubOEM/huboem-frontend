@@ -6,6 +6,7 @@ import Dashboard from "./Pages/General/Dashboard.js"
 
 import OrderParts from "./Pages/Parts/OrderParts.js"
 import OrderHistory from "./Pages/Parts/OrderHistory.js"
+import OrderDetails from "./Pages/Parts/OrderDetails.js"
 import RecurringOrders from "./Pages/Parts/RecurringOrders.js"
 import UploadPart from "./Pages/Parts/UploadPart.js"
 
@@ -45,6 +46,7 @@ function App() {
       {/* Parts */}
         <Route path="/Order_Parts" element={<OrderParts />}/>
         <Route path="/Parts_Order_History" element={<OrderHistory />}/>
+        <Route path="/Order_Details" element={<OrderDetails />}/>
         <Route path="/Recurring_Parts" element={<RecurringOrders />}/>
         <Route path="/Upload_Part" element={<UploadPart />}/>
 

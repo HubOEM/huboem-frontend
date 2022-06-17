@@ -18,7 +18,6 @@ const plans = [
         price: '$80',
         isCurrent: true,
     },
-    // More plans...
 ]
 
 function classNames(...classes) {
@@ -32,7 +31,7 @@ function OrderParts() {
                 <div className="px-4 sm:px-6 lg:px-8">
                     <div className="sm:flex sm:items-center">
                         <div className="sm:flex-auto">
-                            <h1 className="text-xl font-semibold text-gray-900">Plans</h1>
+                            <h1 className="text-xl font-semibold text-gray-900">Parts</h1>
                             <p className="mt-2 text-sm text-gray-700">
                                 Your team is on the <strong className="font-semibold text-gray-900">Startup</strong> plan. The next payment
                                 of $80 will be due on August 4, 2022.
