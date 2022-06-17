@@ -45,11 +45,8 @@ const navigation = [
       { name: 'Add Documents', href: 'Add_Documents' },
     ],
   },
-  {
-    name: 'Machines',
-    icon: CogIcon,
-    current: false,
-  },
+  { name: 'Machines', icon: HomeIcon, current: false, href: 'Machines' },
+
   {
     name: 'OEMs',
     icon: UserGroupIcon,

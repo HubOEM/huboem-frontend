@@ -10,8 +10,15 @@ import RecurringOrders from "./Pages/Parts/RecurringOrders.js"
 import UploadPart from "./Pages/Parts/UploadPart.js"
 
 import RequestServices from "./Pages/Services/RequestServices.js"
+import ServicesHistory from "./Pages/Services/ServicesHistory.js"
+import ServicesCalendar from "./Pages/Services/ServicesCalendar.js"
 
+import DocumentsList from "./Pages/Documents/DocumentsList.js"
 import UploadDoc from "./Pages/Documents/UploadDoc.js"
+
+import Machines from "./Pages/Machines/Machines.js"
+import Machine from "./Pages/Machines/Machine.js"
+
 import Profile from "./Pages/Profile.js"
 import FAQ from "./Pages/FAQ.js"
 
@@ -35,11 +42,17 @@ function App() {
 
       {/* Services */}
         <Route path="/Request_Services" element={<RequestServices />}/>
+        <Route path="/Services_History" element={<ServicesHistory />}/>
+        <Route path="/Services_Calendar" element={<ServicesCalendar />}/>
 
       {/* Documents */}
-        <Route path="/UploadDoc" element={<UploadDoc />}/>
+        <Route path="/View_Documents" element={<DocumentsList />}/>
+        <Route path="/Add_Documents" element={<UploadDoc />}/>
 
       {/* Machines */}
+        <Route path="/Machines" element={<Machines />}/>
+        <Route path="/Machine" element={<Machine />}/>
+
       {/* OEMs */}
       {/* Messages */}
 
