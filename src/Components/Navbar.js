@@ -63,7 +63,7 @@ const navigation = [
     children: [
       { name: 'New Message', href: 'New_Messages' },
       { name: 'View Messages', href: 'View_Messages' },
-      { name: 'Contact Admin', href: 'ContactAdmin' },
+      { name: 'Contact Admin', href: 'Contact_Admin' },
     ],
   },
   { name: 'Profile', href: 'Profile', icon: CogIcon },

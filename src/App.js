@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Navbar from "./Components/Navbar"
 
-import Dashboard from "./Pages/Dashboard.js"
+import Dashboard from "./Pages/General/Dashboard.js"
 
 import OrderParts from "./Pages/Parts/OrderParts.js"
 import OrderHistory from "./Pages/Parts/OrderHistory.js"
@@ -19,8 +19,16 @@ import UploadDoc from "./Pages/Documents/UploadDoc.js"
 import Machines from "./Pages/Machines/Machines.js"
 import Machine from "./Pages/Machines/Machine.js"
 
-import Profile from "./Pages/Profile.js"
-import FAQ from "./Pages/FAQ.js"
+import Companies from "./Pages/OEMs/Companies.js"
+import Company from "./Pages/OEMs/Company.js"
+import Contacts from "./Pages/OEMs/Contacts.js"
+
+import Messages from "./Pages/Messages/Messages.js"
+import NewMessages from "./Pages/Messages/NewMessages.js"
+import ContactAdmin from "./Pages/Messages/ContactAdmin.js"
+
+import Profile from "./Pages/General/Profile.js"
+import FAQ from "./Pages/General/FAQ.js"
 
 
 function App() {
@@ -54,7 +62,14 @@ function App() {
         <Route path="/Machine" element={<Machine />}/>
 
       {/* OEMs */}
+        <Route path="/OEM_Companies" element={<Companies />}/>
+        <Route path="/OEM_Company" element={<Company />}/>
+        <Route path="/OEM_Contacts" element={<Contacts />}/>
+
       {/* Messages */}
+        <Route path="/View_Messages" element={<Messages />}/>
+        <Route path="/New_Messages" element={<NewMessages />}/>
+        <Route path="/Contact_Admin" element={<ContactAdmin />}/>
 
       {/* Profile */}
         <Route path="/Profile" element={<Profile />}/>

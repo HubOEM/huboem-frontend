@@ -9,12 +9,12 @@ module.exports = {
     extend: {
       colors: {
         cyan: colors.cyan,
-        blue: '##E4EBFA'
       },
     },
   },
   plugins: [
-    // ...
     require('@tailwindcss/forms'),
+    require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/line-clamp'),
   ],
 }
