@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 
 import Navbar from "./Components/Navbar"
+import TopNavbar from "./Components/TopNavbar"
 
 import Dashboard from "./Pages/General/Dashboard.js"
 
@@ -38,6 +39,7 @@ function App() {
     <div>
       <div>
         <Navbar />
+        <TopNavbar />
       </div>
       <Routes>
       {/* Dashboard */}

@@ -1,11 +1,13 @@
 import React from 'react'
 import CompaniesList from '../../Components/CompaniesList.js'
+import Header from '../../Components/Header.js'
 
 function Companies() {
   return (
     <div>
-        <CompaniesList />
-        <CompaniesList />
+      <Header />
+      <CompaniesList />
+      <CompaniesList />
     </div>
   )
 }
