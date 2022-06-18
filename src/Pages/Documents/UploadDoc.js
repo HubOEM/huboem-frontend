@@ -1,9 +1,11 @@
+import Footer from "../General/Footer.js"
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 import React from 'react'
 
 function UploadDoc() {
     return (
+        <>
         <div className="min-h-full pb-24 pl-24 pr-24">
             <div className="lg:pl-64 flex flex-col flex-1">
                 <div className="bg-white">
@@ -386,6 +388,7 @@ function UploadDoc() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

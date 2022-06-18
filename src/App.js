@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Navbar from "./Components/Navbar"
 import TopNavbar from "./Components/TopNavbar"
+import Footer from "./Pages/General/Footer.js"
 
 import Dashboard from "./Pages/General/Dashboard.js"
 
@@ -36,55 +37,60 @@ import FAQ from "./Pages/General/FAQ.js"
 
 function App() {
   return (
-    <div>
+    <>
       <div>
-        <Navbar />
-        <TopNavbar />
+        <div>
+          <Navbar />
+          <TopNavbar />
+        </div>
+        <Routes>
+          {/* Dashboard */}
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/Dashboard" element={<Dashboard />} />
+
+          {/* Parts */}
+          <Route path="/Order_Parts" element={<OrderParts />} />
+          <Route path="/Parts_Order_History" element={<OrderHistory />} />
+          <Route path="/Order_Details" element={<OrderDetails />} />
+          <Route path="/Recurring_Parts" element={<RecurringOrders />} />
+          <Route path="/Upload_Part" element={<UploadPart />} />
+          <Route path="/View_Part" element={<ViewPart />} />
+
+          {/* Services */}
+          <Route path="/Request_Services" element={<RequestServices />} />
+          <Route path="/Services_History" element={<ServicesHistory />} />
+          <Route path="/Services_Calendar" element={<ServicesCalendar />} />
+
+          {/* Documents */}
+          <Route path="/View_Documents" element={<DocumentsList />} />
+          <Route path="/Add_Documents" element={<UploadDoc />} />
+
+          {/* Machines */}
+          <Route path="/Machines" element={<Machines />} />
+          <Route path="/Machine" element={<Machine />} />
+
+          {/* OEMs */}
+          <Route path="/OEM_Companies" element={<Companies />} />
+          <Route path="/OEM_Company" element={<Company />} />
+          <Route path="/OEM_Contacts" element={<Contacts />} />
+
+          {/* Messages */}
+          <Route path="/View_Messages" element={<Messages />} />
+          <Route path="/New_Messages" element={<NewMessages />} />
+          <Route path="/Contact_Admin" element={<ContactAdmin />} />
+
+          {/* Profile */}
+          <Route path="/Profile" element={<Profile />} />
+
+          {/* FAQ */}
+          <Route path="/FAQ" element={<FAQ />} />
+
+        </Routes>
       </div>
-      <Routes>
-      {/* Dashboard */}
-        <Route path="/" element={<Dashboard />}/>
-        <Route path="/Dashboard" element={<Dashboard />}/>
-
-      {/* Parts */}
-        <Route path="/Order_Parts" element={<OrderParts />}/>
-        <Route path="/Parts_Order_History" element={<OrderHistory />}/>
-        <Route path="/Order_Details" element={<OrderDetails />}/>
-        <Route path="/Recurring_Parts" element={<RecurringOrders />}/>
-        <Route path="/Upload_Part" element={<UploadPart />}/>
-        <Route path="/View_Part" element={<ViewPart />}/>
-
-      {/* Services */}
-        <Route path="/Request_Services" element={<RequestServices />}/>
-        <Route path="/Services_History" element={<ServicesHistory />}/>
-        <Route path="/Services_Calendar" element={<ServicesCalendar />}/>
-
-      {/* Documents */}
-        <Route path="/View_Documents" element={<DocumentsList />}/>
-        <Route path="/Add_Documents" element={<UploadDoc />}/>
-
-      {/* Machines */}
-        <Route path="/Machines" element={<Machines />}/>
-        <Route path="/Machine" element={<Machine />}/>
-
-      {/* OEMs */}
-        <Route path="/OEM_Companies" element={<Companies />}/>
-        <Route path="/OEM_Company" element={<Company />}/>
-        <Route path="/OEM_Contacts" element={<Contacts />}/>
-
-      {/* Messages */}
-        <Route path="/View_Messages" element={<Messages />}/>
-        <Route path="/New_Messages" element={<NewMessages />}/>
-        <Route path="/Contact_Admin" element={<ContactAdmin />}/>
-
-      {/* Profile */}
-        <Route path="/Profile" element={<Profile />}/>
-
-      {/* FAQ */}
-        <Route path="/FAQ" element={<FAQ />}/>
-
-      </Routes>
-    </div>
+      <div>
+<Footer />
+      </div>
+    </>
   )
 }
 export default App
