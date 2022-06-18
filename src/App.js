@@ -9,6 +9,7 @@ import OrderHistory from "./Pages/Parts/OrderHistory.js"
 import OrderDetails from "./Pages/Parts/OrderDetails.js"
 import RecurringOrders from "./Pages/Parts/RecurringOrders.js"
 import UploadPart from "./Pages/Parts/UploadPart.js"
+import ViewPart from "./Pages/Parts/ViewPart.js"
 
 import RequestServices from "./Pages/Services/RequestServices.js"
 import ServicesHistory from "./Pages/Services/ServicesHistory.js"
@@ -49,6 +50,7 @@ function App() {
         <Route path="/Order_Details" element={<OrderDetails />}/>
         <Route path="/Recurring_Parts" element={<RecurringOrders />}/>
         <Route path="/Upload_Part" element={<UploadPart />}/>
+        <Route path="/View_Part" element={<ViewPart />}/>
 
       {/* Services */}
         <Route path="/Request_Services" element={<RequestServices />}/>

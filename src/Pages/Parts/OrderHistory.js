@@ -9,8 +9,8 @@ const orders = [
     products: [
       {
         id: 1,
-        name: 'Machined Pen and Pencil Set',
-        href: 'Order_Details',
+        name: 'Ball and joint',
+        href: 'View_Part',
         price: '$70.00',
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
@@ -18,42 +18,31 @@ const orders = [
       },
       {
         id: 2,
-        name: 'Machined Pen and Pencil Set',
-        href: 'Order_Details',
+        name: 'Gear',
+        href: 'View_Part',
         price: '$70.00',
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
         imageAlt: 'Detail of mechanical pencil tip with machined black steel shaft and chrome lead tip.',
       },
-      {
-        id: 3,
-        name: 'Machined Pen and Pencil Set',
-        href: 'Order_Details',
-        price: '$70.00',
-        status: 'Delivered Jan 25, 2021',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
-        imageAlt: 'Detail of mechanical pencil tip with machined black steel shaft and chrome lead tip.',
-      },
-      // More products...
     ],
   },
   {
     number: 'UE897HE78',
     date: 'January 2, 2021',
     datetime: '2021-01-02',
-    invoiceHref: 'Order_Details',
+    invoiceHref: 'View_Part',
     total: '$238.00',
     products: [
       {
         id: 1,
-        name: 'Machined Pen and Pencil Set',
+        name: 'Pen',
         href: '#',
         price: '$70.00',
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
         imageAlt: 'Detail of mechanical pencil tip with machined black steel shaft and chrome lead tip.',
       },
-      // More products...
     ],
   },
   {
@@ -65,17 +54,15 @@ const orders = [
     products: [
       {
         id: 1,
-        name: 'Machined Pen and Pencil Set',
+        name: 'Motor',
         href: '#',
         price: '$70.00',
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
         imageAlt: 'Detail of mechanical pencil tip with machined black steel shaft and chrome lead tip.',
       },
-      // More products...
     ],
   },
-  // More orders...
 ]
 
 function OrderHistory() {

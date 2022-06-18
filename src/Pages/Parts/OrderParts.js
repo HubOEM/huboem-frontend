@@ -1,21 +1,27 @@
 /* This example requires Tailwind CSS v2.0+ */
-const plans = [
+// function totalPrice(){
+//     return parts.price * parts.quantity
+// }
+
+const parts = [
     {
         id: 1,
-        name: 'Hobby',
-        memory: '4 GB RAM',
-        cpu: '4 CPUs',
-        storage: '128 GB SSD disk',
-        price: '$40',
+        name: 'Gear',
+        partNumber: 'P-23453',
+        machineSerial: 'M-4930',
+        companyName: 'FILTEC',
+        price: 2.00,
+        quantity: 2,
         isCurrent: false,
     },
     {
         id: 2,
-        name: 'Startup',
-        memory: '8 GB RAM',
-        cpu: '6 CPUs',
-        storage: '256 GB SSD disk',
-        price: '$80',
+        name: 'Belt',
+        partNumber: 'P-889333',
+        machineSerial: 'M-6222344',
+        companyName: 'Douglas',
+        price: 4.00,
+        quantity: 2,
         isCurrent: true,
     },
 ]
@@ -24,7 +30,13 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
+
 function OrderParts() {
+    function totalPrice() {
+        return parts.map((part) => (
+            part.price * part.quantity
+        ))
+    }
     return (
         <div className="min-h-full pt-24 pb-24 pl-24 pr-24">
             <div className="lg:pl-64 flex flex-col flex-1">
@@ -33,8 +45,8 @@ function OrderParts() {
                         <div className="sm:flex-auto">
                             <h1 className="text-xl font-semibold text-gray-900">Parts</h1>
                             <p className="mt-2 text-sm text-gray-700">
-                                Your team is on the <strong className="font-semibold text-gray-900">Startup</strong> plan. The next payment
-                                of $80 will be due on August 4, 2022.
+                                Your team is on the <strong className="font-semibold text-gray-900">Tier 2</strong> plan. The next payment
+                                of $80,000.00 will be due on August 4, 2022.
                             </p>
                         </div>
                         <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
@@ -51,25 +63,31 @@ function OrderParts() {
                             <thead>
                                 <tr>
                                     <th scope="col" className="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6">
-                                        Plan
+                                        Part Name
                                     </th>
                                     <th
                                         scope="col"
                                         className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
                                     >
-                                        Memory
+                                        Part Number
                                     </th>
                                     <th
                                         scope="col"
                                         className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
                                     >
-                                        CPU
+                                        Machine Serial
                                     </th>
                                     <th
                                         scope="col"
                                         className="hidden px-3 py-3.5 text-left text-sm font-semibold text-gray-900 lg:table-cell"
                                     >
-                                        Storage
+                                        Company
+                                    </th>
+                                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                        Price/Unit
+                                    </th>
+                                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                        Quantity
                                     </th>
                                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                                         Price
@@ -80,74 +98,90 @@ function OrderParts() {
                                 </tr>
                             </thead>
                             <tbody>
-                                {plans.map((plan, planIdx) => (
-                                    <tr key={plan.id}>
+                                {parts.map((part, partIdx) => (
+                                    <tr key={part.id}>
                                         <td
                                             className={classNames(
-                                                planIdx === 0 ? '' : 'border-t border-transparent',
+                                                partIdx === 0 ? '' : 'border-t border-transparent',
                                                 'relative py-4 pl-4 sm:pl-6 pr-3 text-sm'
                                             )}
                                         >
                                             <div className="font-medium text-gray-900">
-                                                {plan.name}
-                                                {plan.isCurrent ? <span className="text-indigo-600">(Current Plan)</span> : null}
+                                                {part.name}
+                                                {part.isCurrent ? <span className="text-indigo-600"> (Current Parts)</span> : null}
                                             </div>
                                             <div className="mt-1 flex flex-col text-gray-500 sm:block lg:hidden">
                                                 <span>
-                                                    {plan.memory} / {plan.cpu}
+                                                    {part.partNumber} / {part.machineSerial}
                                                 </span>
                                                 <span className="hidden sm:inline"> · </span>
-                                                <span>{plan.storage}</span>
+                                                <span>{part.companyName}</span>
                                             </div>
-                                            {planIdx !== 0 ? <div className="absolute right-0 left-6 -top-px h-px bg-gray-200" /> : null}
+                                            {partIdx !== 0 ? <div className="absolute right-0 left-6 -top-px h-px bg-gray-200" /> : null}
                                         </td>
                                         <td
                                             className={classNames(
-                                                planIdx === 0 ? '' : 'border-t border-gray-200',
+                                                partIdx === 0 ? '' : 'border-t border-gray-200',
                                                 'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
                                             )}
                                         >
-                                            {plan.memory}
+                                            {part.partNumber}
                                         </td>
                                         <td
                                             className={classNames(
-                                                planIdx === 0 ? '' : 'border-t border-gray-200',
+                                                partIdx === 0 ? '' : 'border-t border-gray-200',
                                                 'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
                                             )}
                                         >
-                                            {plan.cpu}
+                                            {part.machineSerial}
                                         </td>
                                         <td
                                             className={classNames(
-                                                planIdx === 0 ? '' : 'border-t border-gray-200',
+                                                partIdx === 0 ? '' : 'border-t border-gray-200',
                                                 'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
                                             )}
                                         >
-                                            {plan.storage}
+                                            {part.companyName}
                                         </td>
                                         <td
                                             className={classNames(
-                                                planIdx === 0 ? '' : 'border-t border-gray-200',
+                                                partIdx === 0 ? '' : 'border-t border-gray-200',
+                                                'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
+                                            )}
+                                        >
+                                            ${part.price}
+                                        </td>
+                                        <td
+                                            className={classNames(
+                                                partIdx === 0 ? '' : 'border-t border-gray-200',
+                                                'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
+                                            )}
+                                        >
+                                            {part.quantity}
+                                        </td>
+                                        <td
+                                            className={classNames(
+                                                partIdx === 0 ? '' : 'border-t border-gray-200',
                                                 'px-3 py-3.5 text-sm text-gray-500'
                                             )}
                                         >
-                                            <div className="sm:hidden">{plan.price}/mo</div>
-                                            <div className="hidden sm:block">{plan.price}/month</div>
+                                            <div className="sm:hidden">{totalPrice()}</div>
+                                            <div className="hidden sm:block">{totalPrice()}</div>
                                         </td>
                                         <td
                                             className={classNames(
-                                                planIdx === 0 ? '' : 'border-t border-transparent',
+                                                partIdx === 0 ? '' : 'border-t border-transparent',
                                                 'relative py-3.5 pl-3 pr-4 sm:pr-6 text-right text-sm font-medium'
                                             )}
                                         >
                                             <button
                                                 type="button"
                                                 className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
-                                                disabled={plan.isCurrent}
+                                                disabled={part.isCurrent}
                                             >
-                                                Select<span className="sr-only">, {plan.name}</span>
+                                                Select<span className="sr-only">, {part.name}</span>
                                             </button>
-                                            {planIdx !== 0 ? <div className="absolute right-6 left-0 -top-px h-px bg-gray-200" /> : null}
+                                            {partIdx !== 0 ? <div className="absolute right-6 left-0 -top-px h-px bg-gray-200" /> : null}
                                         </td>
                                     </tr>
                                 ))}
