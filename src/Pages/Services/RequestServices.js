@@ -7,7 +7,7 @@ function RequestServices() {
                     <div className="md:grid md:grid-cols-3 md:gap-6">
                         <div className="md:col-span-1">
                             <div className="px-4 sm:px-0">
-                                <h3 className="text-lg font-medium leading-6 text-gray-900">Profile</h3>
+                                <h3 className="text-lg font-medium leading-6 text-gray-900">Machine</h3>
                                 <p className="mt-1 text-sm text-gray-600">
                                     This information will be displayed publicly so be careful what you share.
                                 </p>
@@ -20,18 +20,18 @@ function RequestServices() {
                                         <div className="grid grid-cols-3 gap-6">
                                             <div className="col-span-3 sm:col-span-2">
                                                 <label htmlFor="company-website" className="block text-sm font-medium text-gray-700">
-                                                    Website
+                                                    Serial Number
                                                 </label>
                                                 <div className="mt-1 flex rounded-md shadow-sm">
                                                     <span className="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 text-sm">
-                                                        http://
+                                                        Company (dropdown)
                                                     </span>
                                                     <input
                                                         type="text"
                                                         name="company-website"
                                                         id="company-website"
                                                         className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
-                                                        placeholder="www.example.com"
+                                                        placeholder="Serial number..."
                                                     />
                                                 </div>
                                             </div>
@@ -47,7 +47,7 @@ function RequestServices() {
                                                     name="about"
                                                     rows={3}
                                                     className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
-                                                    placeholder="you@example.com"
+                                                    placeholder="Describe your problem..."
                                                     defaultValue={''}
                                                 />
                                             </div>
@@ -56,7 +56,7 @@ function RequestServices() {
                                             </p>
                                         </div>
 
-                                        <div>
+                                        {/* <div>
                                             <label className="block text-sm font-medium text-gray-700">Photo</label>
                                             <div className="mt-1 flex items-center">
                                                 <span className="inline-block h-12 w-12 rounded-full overflow-hidden bg-gray-100">
@@ -71,10 +71,10 @@ function RequestServices() {
                                                     Change
                                                 </button>
                                             </div>
-                                        </div>
+                                        </div> */}
 
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700">Cover photo</label>
+                                            <label className="block text-sm font-medium text-gray-700">Upload photos, videos, or other documents</label>
                                             <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                                                 <div className="space-y-1 text-center">
                                                     <svg
@@ -126,7 +126,7 @@ function RequestServices() {
                     </div>
                 </div>
 
-                <div className="mt-10 sm:mt-0">
+                {/* <div className="mt-10 sm:mt-0">
                     <div className="md:grid md:grid-cols-3 md:gap-6">
                         <div className="md:col-span-1">
                             <div className="px-4 sm:px-0">
@@ -265,7 +265,7 @@ function RequestServices() {
                     <div className="py-5">
                         <div className="border-t border-gray-200" />
                     </div>
-                </div>
+                </div> */}
 
                 <div className="mt-10 sm:mt-0">
                     <div className="md:grid md:grid-cols-3 md:gap-6">
@@ -296,9 +296,9 @@ function RequestServices() {
                                                     </div>
                                                     <div className="ml-3 text-sm">
                                                         <label htmlFor="comments" className="font-medium text-gray-700">
-                                                            Comments
+                                                            Accept/Decline/Edit Request
                                                         </label>
-                                                        <p className="text-gray-500">Get notified when someones posts a comment on a posting.</p>
+                                                        <p className="text-gray-500">Get notified when the vendor makes a decision on the request.</p>
                                                     </div>
                                                 </div>
                                                 <div className="flex items-start">
@@ -312,9 +312,9 @@ function RequestServices() {
                                                     </div>
                                                     <div className="ml-3 text-sm">
                                                         <label htmlFor="candidates" className="font-medium text-gray-700">
-                                                            Candidates
+                                                            Messages
                                                         </label>
-                                                        <p className="text-gray-500">Get notified when a candidate applies for a job.</p>
+                                                        <p className="text-gray-500">Get notified when a the vendor sends a message.</p>
                                                     </div>
                                                 </div>
                                                 <div className="flex items-start">
@@ -328,9 +328,9 @@ function RequestServices() {
                                                     </div>
                                                     <div className="ml-3 text-sm">
                                                         <label htmlFor="offers" className="font-medium text-gray-700">
-                                                            Offers
+                                                            Heads Up!
                                                         </label>
-                                                        <p className="text-gray-500">Get notified when a candidate accepts or rejects an offer.</p>
+                                                        <p className="text-gray-500">Get notified when the serivce is a week out.</p>
                                                     </div>
                                                 </div>
                                             </div>

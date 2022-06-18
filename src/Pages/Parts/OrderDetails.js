@@ -362,9 +362,9 @@ function OrderDetails() {
                         <div className="px-4 space-y-2 sm:px-0 sm:flex sm:items-baseline sm:justify-between sm:space-y-0">
                             <div className="flex sm:items-baseline sm:space-x-4">
                                 <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Order #54879</h1>
-                                <a href="#" className="hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 sm:block">
+                                {/* <a href="#" className="hidden text-sm font-medium text-indigo-600 hover:text-indigo-500 sm:block">
                                     View invoice<span aria-hidden="true"> &rarr;</span>
-                                </a>
+                                </a> */}
                             </div>
                             <p className="text-sm text-gray-600">
                                 Order placed{' '}

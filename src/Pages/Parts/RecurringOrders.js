@@ -7,7 +7,7 @@ const parts = [
         serialMachine: '789990',
         company: 'Big company co',
         quantity: '2',
-        frequency: '21',
+        frequency: '1',
         price: '$45.45',
     },
     {
@@ -16,7 +16,7 @@ const parts = [
         serialMachine: '789990',
         company: 'Big company co',
         quantity: '2',
-        frequency: '21',
+        frequency: '1',
         price: '$45.45',
     },
     {
@@ -25,7 +25,7 @@ const parts = [
         serialMachine: '789990',
         company: 'Big company co',
         quantity: '2',
-        frequency: '21',
+        frequency: '1',
         price: '$45.45',
     },
     {
@@ -34,7 +34,7 @@ const parts = [
         serialMachine: '789990',
         company: 'Big company co',
         quantity: '2',
-        frequency: '21',
+        frequency: '3',
         price: '$45.45',
     },
     {
@@ -43,7 +43,7 @@ const parts = [
         serialMachine: '789990',
         company: 'Big company co',
         quantity: '2',
-        frequency: '21',
+        frequency: '1',
         price: '$45.45',
     },
     {
@@ -52,7 +52,7 @@ const parts = [
         serialMachine: '789990',
         company: 'Big company co',
         quantity: '2',
-        frequency: '21',
+        frequency: '0.5',
         price: '$45.45',
     },
 ]
@@ -148,7 +148,7 @@ function RecurringOrders() {
                                                     Quantity
                                                 </th>
                                                 <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                                    Duration
+                                                    Frequency (mo.)
                                                 </th>
                                                 <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                                                     Price
