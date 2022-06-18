@@ -1,6 +1,4 @@
 
-import Footer from "../General/Footer.js"
-
 import { Fragment, useState } from 'react'
 import { Dialog, Popover, Tab, Transition } from '@headlessui/react'
 import { MenuIcon, SearchIcon, ShoppingCartIcon, UserIcon, XIcon } from '@heroicons/react/outline'
@@ -588,7 +586,7 @@ function OrderDetails() {
                     </div>
                 </div>
             </div>
-            <Footer />
+
         </>
     )
 }

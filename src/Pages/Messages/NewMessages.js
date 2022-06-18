@@ -1,4 +1,4 @@
-import Footer from "../General/Footer.js"
+
 import Header from '../../Components/Header.js'
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
@@ -270,7 +270,7 @@ function NewMessages() {
                     </form>
                 </div>
             </div>
-            <Footer />
+            
         </>
     )
 }

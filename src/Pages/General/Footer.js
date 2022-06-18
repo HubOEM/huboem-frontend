@@ -92,7 +92,7 @@ const navigation = {
 function Footer() {
     return (
         <>
-            <div className="min-h-full lg:border-t-2 mt-48 lg:border-gray-200">
+            <div className="min-h-full lg:border-t-2 mt-48 lg:border-gray-200 mt-96">
                 <div className="lg:pl-64 flex flex-col flex-1">
                     <footer className="bg-white" aria-labelledby="footer-heading">
                         <h2 id="footer-heading" className="sr-only">

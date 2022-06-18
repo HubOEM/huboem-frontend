@@ -1,7 +1,5 @@
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
-import Footer from "../General/Footer.js"
-
 const orders = [
   {
     number: 'WU88191111',
@@ -204,7 +202,7 @@ function OrderHistory() {
           </div>
         </div>
       </div>
-      <Footer />
+
     </>
   )
 }

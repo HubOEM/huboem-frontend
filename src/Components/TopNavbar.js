@@ -141,7 +141,7 @@ function TopNavbar() {
                     </div>
                 </div>
             </div>
-            <div className="py-6 md:flex md:items-center md:justify-between lg:border-t lg:border-gray-200 ">
+            <div className="h-1 bg-[#F9FAFB] lg:border-t lg:border-gray-200 shadow-2xlg">
             </div>
         </div>
     )

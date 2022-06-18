@@ -1,7 +1,5 @@
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
-import Footer from "../General/Footer.js"
-
 const parts = [
     {
         id: 1,
@@ -304,7 +302,6 @@ function OrderParts() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

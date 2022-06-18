@@ -1,5 +1,4 @@
 
-import Footer from "../General/Footer.js"
 
 import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/solid'
@@ -286,7 +285,7 @@ function PartOverview() {
           </div>
         </div>
       </div>
-      <Footer />
+
     </>
   )
 }

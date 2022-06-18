@@ -1,6 +1,4 @@
 
-import Footer from "../General/Footer.js"
-
 import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
 import { StarIcon } from '@heroicons/react/solid'
@@ -245,7 +243,6 @@ function ViewPart() {
                     </div>
                 </div>
             </div >
-            <Footer />
         </>
     )
 }

@@ -1,8 +1,5 @@
 import React from 'react'
 
-
-import Footer from "../General/Footer.js"
-
 function UploadPart() {
     return (
         <>
@@ -356,7 +353,6 @@ function UploadPart() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }

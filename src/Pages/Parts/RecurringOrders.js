@@ -1,7 +1,6 @@
 import { useLayoutEffect, useRef, useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
-import Footer from "../General/Footer.js"
 
 const parts = [
     {
@@ -94,7 +93,7 @@ function RecurringOrders() {
                                     Recurring Orders
                                 </h2>
                                 <p className="mt-5 text-xl text-gray-500">
-                                    IDK
+                                   IDK
                                 </p>
                             </div>
                             <div className="mt-10 w-full max-w-xs">
@@ -245,7 +244,6 @@ function RecurringOrders() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </>
     )
 }
