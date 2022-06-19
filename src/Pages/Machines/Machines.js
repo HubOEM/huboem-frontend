@@ -47,7 +47,6 @@ function Machines() {
         <MachinesCards />
         <MachinesList />
       </div>
-      <Footer />
     </>
   )
 }
