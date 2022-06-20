@@ -49,7 +49,7 @@ function Profile() {
             <div className="sticky top-0 z-10 flex-shrink-0 h-16 bg-white border-b border-gray-200 flex">
               <button
                 type="button"
-                className="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500 md:hidden"
+                className="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#679CE8] md:hidden"
                 onClick={() => setSidebarOpen(true)}
               >
                 <span className="sr-only">Open sidebar</span>
@@ -88,7 +88,7 @@ function Profile() {
                 <div className="ml-4 flex items-center md:ml-6">
                   <button
                     type="button"
-                    className="bg-white rounded-full p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                    className="bg-white rounded-full p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                   >
                     <BellIcon className="h-6 w-6" aria-hidden="true" />
                     <span className="sr-only">View notifications</span>
@@ -113,7 +113,7 @@ function Profile() {
                         <select
                           id="selected-tab"
                           name="selected-tab"
-                          className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-purple-500 focus:border-purple-500 sm:text-sm rounded-md"
+                          className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-[#679CE8] focus:border-[#679CE8] sm:text-sm rounded-md"
                           defaultValue={tabs.find((tab) => tab.current).name}
                         >
                           {tabs.map((tab) => (
@@ -130,7 +130,7 @@ function Profile() {
                                 href={tab.href}
                                 className={classNames(
                                   tab.current
-                                    ? 'border-purple-500 text-purple-600'
+                                    ? 'border-[#679CE8] text-[#679CE8]'
                                     : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
                                   'whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm'
                                 )}
@@ -159,7 +159,7 @@ function Profile() {
                                 <span className="ml-4 flex-shrink-0">
                                   <button
                                     type="button"
-                                    className="bg-white rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="bg-white rounded-md font-medium text-[#679CE8] hover:text-[#679CE8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                   >
                                     Update
                                   </button>
@@ -179,7 +179,7 @@ function Profile() {
                                 <span className="ml-4 flex-shrink-0 flex items-start space-x-4">
                                   <button
                                     type="button"
-                                    className="bg-white rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="bg-white rounded-md font-medium text-[#679CE8] hover:text-[#679CE8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                   >
                                     Update
                                   </button>
@@ -188,7 +188,7 @@ function Profile() {
                                   </span>
                                   <button
                                     type="button"
-                                    className="bg-white rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="bg-white rounded-md font-medium text-[#679CE8] hover:text-[#679CE8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                   >
                                     Remove
                                   </button>
@@ -202,7 +202,7 @@ function Profile() {
                                 <span className="ml-4 flex-shrink-0">
                                   <button
                                     type="button"
-                                    className="bg-white rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="bg-white rounded-md font-medium text-[#679CE8] hover:text-[#679CE8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                   >
                                     Update
                                   </button>
@@ -216,7 +216,7 @@ function Profile() {
                                 <span className="ml-4 flex-shrink-0">
                                   <button
                                     type="button"
-                                    className="bg-white rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="bg-white rounded-md font-medium text-[#679CE8] hover:text-[#679CE8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                   >
                                     Update
                                   </button>
@@ -243,7 +243,7 @@ function Profile() {
                                 <span className="ml-4 flex-shrink-0">
                                   <button
                                     type="button"
-                                    className="bg-white rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="bg-white rounded-md font-medium text-[#679CE8] hover:text-[#679CE8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                   >
                                     Update
                                   </button>
@@ -257,7 +257,7 @@ function Profile() {
                                 <span className="ml-4 flex-shrink-0 flex items-start space-x-4">
                                   <button
                                     type="button"
-                                    className="bg-white rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="bg-white rounded-md font-medium text-[#679CE8] hover:text-[#679CE8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                   >
                                     Update
                                   </button>
@@ -266,7 +266,7 @@ function Profile() {
                                   </span>
                                   <button
                                     type="button"
-                                    className="bg-white rounded-md font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+                                    className="bg-white rounded-md font-medium text-[#679CE8] hover:text-[#679CE8] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                   >
                                     Remove
                                   </button>
@@ -282,8 +282,8 @@ function Profile() {
                                   checked={automaticTimezoneEnabled}
                                   onChange={setAutomaticTimezoneEnabled}
                                   className={classNames(
-                                    automaticTimezoneEnabled ? 'bg-purple-600' : 'bg-gray-200',
-                                    'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:ml-auto'
+                                    automaticTimezoneEnabled ? 'bg-[#679CE8]' : 'bg-gray-200',
+                                    'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8] sm:ml-auto'
                                   )}
                                 >
                                   <span
@@ -308,8 +308,8 @@ function Profile() {
                                   checked={autoUpdateApplicantDataEnabled}
                                   onChange={setAutoUpdateApplicantDataEnabled}
                                   className={classNames(
-                                    autoUpdateApplicantDataEnabled ? 'bg-purple-600' : 'bg-gray-200',
-                                    'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 sm:ml-auto'
+                                    autoUpdateApplicantDataEnabled ? 'bg-[#679CE8]' : 'bg-gray-200',
+                                    'relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8] sm:ml-auto'
                                   )}
                                 >
                                   <span

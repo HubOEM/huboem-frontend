@@ -40,7 +40,7 @@ function ContactAdmin() {
             <div className="min-h-full pt-24 pb-24 pl-24 pr-24">
                 <div className="lg:pl-64 flex flex-col flex-1">
                     <form action="#" className="relative">
-                        <div className="border border-gray-300 rounded-lg shadow-sm overflow-hidden focus-within:border-indigo-500 focus-within:ring-1 focus-within:ring-indigo-500">
+                        <div className="border border-gray-300 rounded-lg shadow-sm overflow-hidden focus-within:border-[#679CE8] focus-within:ring-1 focus-within:ring-[#679CE8]">
                             <label htmlFor="title" className="sr-only">
                                 Title
                             </label>
@@ -260,7 +260,7 @@ function ContactAdmin() {
                                 <div className="flex-shrink-0">
                                     <button
                                         type="submit"
-                                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                        className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                     >
                                         Create
                                     </button>
