@@ -38,7 +38,6 @@ const product = {
                 'Water-resistant',
             ],
         },
-        // More sections...
     ],
 }
 
