@@ -65,7 +65,7 @@ const transactions = [
   },
 ]
 const statusStyles = {
-  success: 'bg-green-100 text-green-800',
+  success: 'bg-green-100 text-[#5ED797]',
   processing: 'bg-yellow-100 text-yellow-800',
   failed: 'bg-gray-100 text-gray-800',
 }
@@ -127,7 +127,7 @@ function Dashboard() {
                           <dt className="sr-only">Account status</dt>
                           <dd className="mt-3 flex items-center text-sm text-gray-500 font-medium sm:mr-6 sm:mt-0 capitalize">
                             <CheckCircleIcon
-                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-green-400"
+                              className="flex-shrink-0 mr-1.5 h-5 w-5 text-[#5ED797]"
                               aria-hidden="true"
                             />
                             Verified account
@@ -148,7 +148,7 @@ function Dashboard() {
                     <a href="Request_Services">
                       <button
                         type="button"
-                        className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-cyan-600 hover:bg-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                        className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#5ED797] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
                       >
                         Schedule Service
                       </button>
