@@ -26,7 +26,7 @@ function UploadDoc() {
                                 <select
                                     id="type"
                                     name="type"
-                                    className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                    className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-[#679CE8] focus:border-[#679CE8] sm:text-sm"
                                     defaultValue="Serial Number"
                                 >
                                     <option>Machine (Serial #)</option>
@@ -64,7 +64,7 @@ function UploadDoc() {
                                                     type="text"
                                                     name="company-website"
                                                     id="company-website"
-                                                    className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                    className="focus:ring-[#679CE8] focus:border-[#679CE8] flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
                                                     placeholder="www.example.com"
                                                 />
                                             </div>
@@ -80,7 +80,7 @@ function UploadDoc() {
                                                 id="about"
                                                 name="about"
                                                 rows={3}
-                                                className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border border-gray-300 rounded-md"
+                                                className="shadow-sm focus:ring-[#679CE8] focus:border-[#679CE8] block w-full sm:text-sm border border-gray-300 rounded-md"
                                                 placeholder="you@example.com"
                                                 defaultValue={''}
                                             />
@@ -98,7 +98,7 @@ function UploadDoc() {
                                             </span>
                                             <button
                                                 type="button"
-                                                className="bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                className="bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                             >
                                                 Change
                                             </button>
@@ -126,7 +126,7 @@ function UploadDoc() {
                                                 <div className="flex text-sm text-gray-600">
                                                     <label
                                                         htmlFor="file-upload"
-                                                        className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                                                        className="relative cursor-pointer bg-white rounded-md font-medium text-[#679CE8] hover:text-[#4586e1] focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-[#679CE8]"
                                                     >
                                                         <span>Upload a file</span>
                                                         <input id="file-upload" name="file-upload" type="file" className="sr-only" />
@@ -160,7 +160,7 @@ function UploadDoc() {
                                                 name="first-name"
                                                 id="first-name"
                                                 autoComplete="given-name"
-                                                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                             />
                                         </div>
 
@@ -173,7 +173,7 @@ function UploadDoc() {
                                                 name="last-name"
                                                 id="last-name"
                                                 autoComplete="family-name"
-                                                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                             />
                                         </div>
 
@@ -186,7 +186,7 @@ function UploadDoc() {
                                                 name="email-address"
                                                 id="email-address"
                                                 autoComplete="email"
-                                                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                             />
                                         </div>
 
@@ -198,7 +198,7 @@ function UploadDoc() {
                                                 id="country"
                                                 name="country"
                                                 autoComplete="country-name"
-                                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                                className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#679CE8] focus:border-[#679CE8] sm:text-sm"
                                             >
                                                 <option>United States</option>
                                                 <option>Canada</option>
@@ -215,7 +215,7 @@ function UploadDoc() {
                                                 name="street-address"
                                                 id="street-address"
                                                 autoComplete="street-address"
-                                                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                             />
                                         </div>
 
@@ -228,7 +228,7 @@ function UploadDoc() {
                                                 name="city"
                                                 id="city"
                                                 autoComplete="address-level2"
-                                                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                             />
                                         </div>
 
@@ -241,7 +241,7 @@ function UploadDoc() {
                                                 name="region"
                                                 id="region"
                                                 autoComplete="address-level1"
-                                                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                             />
                                         </div>
 
@@ -254,7 +254,7 @@ function UploadDoc() {
                                                 name="postal-code"
                                                 id="postal-code"
                                                 autoComplete="postal-code"
-                                                className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                             />
                                         </div>
                                     </div>
@@ -283,7 +283,7 @@ function UploadDoc() {
                                                         id="comments"
                                                         name="comments"
                                                         type="checkbox"
-                                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                        className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300 rounded"
                                                     />
                                                 </div>
                                                 <div className="ml-3 text-sm">
@@ -299,7 +299,7 @@ function UploadDoc() {
                                                         id="candidates"
                                                         name="candidates"
                                                         type="checkbox"
-                                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                        className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300 rounded"
                                                     />
                                                 </div>
                                                 <div className="ml-3 text-sm">
@@ -315,7 +315,7 @@ function UploadDoc() {
                                                         id="offers"
                                                         name="offers"
                                                         type="checkbox"
-                                                        className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                        className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300 rounded"
                                                     />
                                                 </div>
                                                 <div className="ml-3 text-sm">
@@ -336,7 +336,7 @@ function UploadDoc() {
                                                     id="push-everything"
                                                     name="push-notifications"
                                                     type="radio"
-                                                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                                                    className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300"
                                                 />
                                                 <label htmlFor="push-everything" className="ml-3 block text-sm font-medium text-gray-700">
                                                     Everything
@@ -347,7 +347,7 @@ function UploadDoc() {
                                                     id="push-email"
                                                     name="push-notifications"
                                                     type="radio"
-                                                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                                                    className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300"
                                                 />
                                                 <label htmlFor="push-email" className="ml-3 block text-sm font-medium text-gray-700">
                                                     Same as email
@@ -358,7 +358,7 @@ function UploadDoc() {
                                                     id="push-nothing"
                                                     name="push-notifications"
                                                     type="radio"
-                                                    className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                                                    className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300"
                                                 />
                                                 <label htmlFor="push-nothing" className="ml-3 block text-sm font-medium text-gray-700">
                                                     No push notifications
@@ -374,13 +374,13 @@ function UploadDoc() {
                     <div className="flex justify-end">
                         <button
                             type="button"
-                            className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                         >
                             Cancel
                         </button>
                         <button
                             type="submit"
-                            className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                            className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#5ED797] hover:bg-[#28cf76] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                         >
                             Save
                         </button>

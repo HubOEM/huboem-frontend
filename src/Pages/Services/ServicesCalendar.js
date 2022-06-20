@@ -232,7 +232,7 @@ function ServicesCalendar() {
                                     <div className="ml-6 h-6 w-px bg-gray-300" />
                                     <button
                                         type="button"
-                                        className="focus:outline-none ml-6 rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                                        className="focus:outline-none ml-6 rounded-md border border-transparent bg-[#679CE8] py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-[#4586e1] focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                                     >
                                         Add event
                                     </button>
@@ -380,7 +380,7 @@ function ServicesCalendar() {
                                                 dateTime={day.date}
                                                 className={
                                                     day.isToday
-                                                        ? 'flex h-6 w-6 items-center justify-center rounded-full bg-indigo-600 font-semibold text-white'
+                                                        ? 'flex h-6 w-6 items-center justify-center rounded-full bg-[#679CE8] font-semibold text-white'
                                                         : undefined
                                                 }
                                             >
@@ -391,12 +391,12 @@ function ServicesCalendar() {
                                                     {day.events.slice(0, 2).map((event) => (
                                                         <li key={event.id}>
                                                             <a href={event.href} className="group flex">
-                                                                <p className="flex-auto truncate font-medium text-gray-900 group-hover:text-indigo-600">
+                                                                <p className="flex-auto truncate font-medium text-gray-900 group-hover:text-[#679CE8]">
                                                                     {event.name}
                                                                 </p>
                                                                 <time
                                                                     dateTime={event.datetime}
-                                                                    className="ml-3 hidden flex-none text-gray-500 group-hover:text-indigo-600 xl:block"
+                                                                    className="ml-3 hidden flex-none text-gray-500 group-hover:text-[#679CE8] xl:block"
                                                                 >
                                                                     {event.time}
                                                                 </time>
@@ -418,7 +418,7 @@ function ServicesCalendar() {
                                                 day.isCurrentMonth ? 'bg-white' : 'bg-gray-50',
                                                 (day.isSelected || day.isToday) && 'font-semibold',
                                                 day.isSelected && 'text-white',
-                                                !day.isSelected && day.isToday && 'text-indigo-600',
+                                                !day.isSelected && day.isToday && 'text-[#679CE8]',
                                                 !day.isSelected && day.isCurrentMonth && !day.isToday && 'text-gray-900',
                                                 !day.isSelected && !day.isCurrentMonth && !day.isToday && 'text-gray-500',
                                                 'flex h-14 flex-col py-2 px-3 hover:bg-gray-100 focus:z-10'
@@ -428,8 +428,8 @@ function ServicesCalendar() {
                                                 dateTime={day.date}
                                                 className={classNames(
                                                     day.isSelected && 'flex h-6 w-6 items-center justify-center rounded-full',
-                                                    day.isSelected && day.isToday && 'bg-indigo-600',
-                                                    day.isSelected && !day.isToday && 'bg-gray-900',
+                                                    day.isSelected && day.isToday && 'bg-[#679CE8]',
+                                                    day.isSelected && !day.isToday && 'bg-[#5ED797]',
                                                     'ml-auto'
                                                 )}
                                             >

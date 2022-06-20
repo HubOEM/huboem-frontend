@@ -75,7 +75,7 @@ function Machine() {
                                                             </span>
                                                             <span
                                                                 className={classNames(
-                                                                    selected ? 'ring-indigo-500' : 'ring-transparent',
+                                                                    selected ? 'ring-[#4586e1]' : 'ring-transparent',
                                                                     'absolute inset-0 rounded-md ring-2 ring-offset-2 pointer-events-none'
                                                                 )}
                                                                 aria-hidden="true"
@@ -118,7 +118,7 @@ function Machine() {
                                                     <StarIcon
                                                         key={rating}
                                                         className={classNames(
-                                                            product.rating > rating ? 'text-indigo-500' : 'text-gray-300',
+                                                            product.rating > rating ? 'text-[#4586e1]' : 'text-gray-300',
                                                             'h-5 w-5 flex-shrink-0'
                                                         )}
                                                         aria-hidden="true"
@@ -178,7 +178,7 @@ function Machine() {
                                         <div className="mt-10 flex sm:flex-col1">
                                             <button
                                                 type="submit"
-                                                className="max-w-xs flex-1 bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
+                                                className="max-w-xs flex-1 bg-[#569CE8] border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-[#4586e1] sm:w-full"
                                             >
                                                 Add to bag
                                             </button>
@@ -206,14 +206,14 @@ function Machine() {
                                                             <h3>
                                                                 <Disclosure.Button className="group relative w-full py-6 flex justify-between items-center text-left">
                                                                     <span
-                                                                        className={classNames(open ? 'text-indigo-600' : 'text-gray-900', 'text-sm font-medium')}
+                                                                        className={classNames(open ? 'text-[#569CE8]' : 'text-gray-900', 'text-sm font-medium')}
                                                                     >
                                                                         {detail.name}
                                                                     </span>
                                                                     <span className="ml-6 flex items-center">
                                                                         {open ? (
                                                                             <MinusSmIcon
-                                                                                className="block h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                                                                                className="block h-6 w-6 text-[#679CE8] group-hover:text-[#4586e1]"
                                                                                 aria-hidden="true"
                                                                             />
                                                                         ) : (

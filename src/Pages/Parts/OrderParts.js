@@ -163,7 +163,7 @@ function OrderParts() {
                             <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                                 <button
                                     type="button"
-                                    className="inline-flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                                    className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
                                 >
                                     Update credit card
                                 </button>
@@ -219,7 +219,7 @@ function OrderParts() {
                                             >
                                                 <div className="font-medium text-gray-900">
                                                     {part.name}
-                                                    {part.isCurrent ? <span className="text-indigo-600"> (Current Parts)</span> : null}
+                                                    {part.isCurrent ? <span className="text-[#679CE8]"> (Current Parts)</span> : null}
                                                 </div>
                                                 <div className="mt-1 flex flex-col text-gray-500 sm:block lg:hidden">
                                                     <span>

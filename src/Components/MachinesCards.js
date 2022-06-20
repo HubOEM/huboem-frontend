@@ -80,7 +80,7 @@ function MachinesCards() {
                   <div className="flex-1 truncate">
                     <div className="flex items-center space-x-3">
                       <h3 className="text-gray-900 text-sm font-medium truncate">{person.name}</h3>
-                      <span className="flex-shrink-0 inline-block px-2 py-0.5 text-green-800 text-xs font-medium bg-green-100 rounded-full">
+                      <span className="flex-shrink-0 inline-block px-2 py-0.5 text-[#5ED797] text-xs font-medium bg-green-100 rounded-full">
                         {person.role}
                       </span>
                     </div>

@@ -128,7 +128,7 @@ function RequestServices() {
                                                         <div className="flex text-sm text-gray-600">
                                                             <label
                                                                 htmlFor="file-upload"
-                                                                className="relative cursor-pointer bg-white rounded-md font-medium text-indigo-600 hover:text-indigo-500 focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                                                                className="relative cursor-pointer bg-white rounded-md font-medium text-[#679CE8] hover:text-[#4586e1] focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
                                                             >
                                                                 <span>Upload a file</span>
                                                                 <input id="file-upload" name="file-upload" type="file" className="sr-only" />
@@ -143,7 +143,7 @@ function RequestServices() {
                                         <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                                             <button
                                                 type="submit"
-                                                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                             >
                                                 Save
                                             </button>
@@ -284,7 +284,7 @@ function RequestServices() {
                                     <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                                         <button
                                             type="submit"
-                                            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                         >
                                             Save
                                         </button>
@@ -412,7 +412,7 @@ function RequestServices() {
                                         <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                                             <button
                                                 type="submit"
-                                                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                             >
                                                 Save
                                             </button>

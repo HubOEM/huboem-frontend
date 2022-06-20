@@ -185,7 +185,7 @@ function OrderHistory() {
                               <td className="hidden py-6 pr-8 sm:table-cell">{product.price}</td>
                               <td className="hidden py-6 pr-8 sm:table-cell">{product.status}</td>
                               <td className="py-6 font-medium text-right whitespace-nowrap">
-                                <a href={product.href} className="text-indigo-600">
+                                <a href={product.href} className="text-[#679CE8]">
                                   View<span className="hidden lg:inline"> Product</span>
                                   <span className="sr-only">, {product.name}</span>
                                 </a>
