@@ -34,9 +34,11 @@ function NewMessages() {
     const [labelled, setLabelled] = useState(labels[0])
     const [dated, setDated] = useState(dueDates[0])
 
+    const title = 'New Messages'
+    const description = 'Select the company, then the contact you would like to speak with.'
     return (
         <>
-            <Header />
+            <Header title={title} description={description} />
             <div className="min-h-full pt-24 pb-24 pl-24 pr-24">
                 <div className="lg:pl-64 flex flex-col flex-1">
                     <form action="#" className="relative">

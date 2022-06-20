@@ -84,7 +84,7 @@ function Dashboard() {
           {/* <div className="relative z-10 flex-shrink-0 flex h-16 bg-white border-b border-gray-200 lg:border-none">
             <button
               type="button"
-              className="px-4 border-r border-gray-200 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500 lg:hidden"
+              className="px-4 border-r border-gray-200 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#679CE8] lg:hidden"
               onClick={() => setSidebarOpen(true)}
             >
               <span className="sr-only">Open sidebar</span>
@@ -140,7 +140,7 @@ function Dashboard() {
                     <a href="Order_Parts">
                       <button
                         type="button"
-                        className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                        className="inline-flex items-center px-4 py-2 border border-gray-300 shadow-sm text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                       >
                         Place Order
                       </button>
@@ -148,7 +148,7 @@ function Dashboard() {
                     <a href="Request_Services">
                       <button
                         type="button"
-                        className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#5ED797] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
+                        className="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#5ED797] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                       >
                         Schedule Service
                       </button>

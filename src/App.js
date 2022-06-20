@@ -1,4 +1,4 @@
-// blue = [#679CE8], hard blue = [#4586e1]
+// blue = [#679CE8]/[#7FA4E7], hard blue = [#4586e1]
 // green = [#5ED797], hard green = [#28cf76]
 
 import { Routes, Route } from 'react-router-dom'

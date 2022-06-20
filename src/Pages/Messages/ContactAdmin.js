@@ -12,17 +12,14 @@ const assignees = [
         avatar:
             'https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
     },
-    // More items...
 ]
 const labels = [
     { name: 'Unlabelled', value: null },
     { name: 'Engineering', value: 'engineering' },
-    // More items...
 ]
 const dueDates = [
     { name: 'No due date', value: null },
     { name: 'Today', value: 'today' },
-    // More items...
 ]
 
 function classNames(...classes) {
@@ -34,9 +31,11 @@ function ContactAdmin() {
     const [labelled, setLabelled] = useState(labels[0])
     const [dated, setDated] = useState(dueDates[0])
 
+    const title = 'Contact Admin'
+    const description = 'Reach out to admin regarding a financing/accounting, shipping problems, or requests for new machines.'
     return (
         <>
-            <Header />
+            <Header title={title} description={description} />
             <div className="min-h-full pt-24 pb-24 pl-24 pr-24">
                 <div className="lg:pl-64 flex flex-col flex-1">
                     <form action="#" className="relative">
