@@ -5,8 +5,8 @@ import { StarIcon } from '@heroicons/react/solid'
 import { HeartIcon, MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 
 const product = {
-    name: 'Zip Tote Basket',
-    price: '$140',
+    name: 'Gears',
+    price: '$70',
     rating: 4,
     images: [
         {
@@ -15,7 +15,6 @@ const product = {
             src: 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg',
             alt: 'Angled front view with bag zipped and handles upright.',
         },
-        // More images...
     ],
     colors: [
         { name: 'Washed Black', bgColor: 'bg-gray-700', selectedColor: 'ring-gray-700' },
@@ -23,7 +22,7 @@ const product = {
         { name: 'Washed Gray', bgColor: 'bg-gray-500', selectedColor: 'ring-gray-500' },
     ],
     description: `
-    <p>The Zip Tote Basket is the perfect midpoint between shopping tote and comfy backpack. With convertible straps, you can hand carry, should sling, or backpack this convenient and spacious bag. The zip top and durable canvas construction keeps your goods protected for all-day use.</p>
+    <p>Gears are great for all types of machines. They are essential for processes that generate energy to move the parts. Be sure to have some on stock!</p>
   `,
     details: [
         {
@@ -38,7 +37,6 @@ const product = {
                 'Water-resistant',
             ],
         },
-        // More sections...
     ],
 }
 
@@ -74,7 +72,7 @@ function ViewPart() {
                                                             </span>
                                                             <span
                                                                 className={classNames(
-                                                                    selected ? 'ring-indigo-500' : 'ring-transparent',
+                                                                    selected ? 'ring-[#679CE8]' : 'ring-transparent',
                                                                     'absolute inset-0 rounded-md ring-2 ring-offset-2 pointer-events-none'
                                                                 )}
                                                                 aria-hidden="true"
@@ -117,7 +115,7 @@ function ViewPart() {
                                                     <StarIcon
                                                         key={rating}
                                                         className={classNames(
-                                                            product.rating > rating ? 'text-indigo-500' : 'text-gray-300',
+                                                            product.rating > rating ? 'text-[#679CE8]' : 'text-gray-300',
                                                             'h-5 w-5 flex-shrink-0'
                                                         )}
                                                         aria-hidden="true"
@@ -177,7 +175,7 @@ function ViewPart() {
                                         <div className="mt-10 flex sm:flex-col1">
                                             <button
                                                 type="submit"
-                                                className="max-w-xs flex-1 bg-indigo-600 border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-indigo-500 sm:w-full"
+                                                className="max-w-xs flex-1 bg-[#5ED797] border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-[#28cf76] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-[#5ED797] sm:w-full"
                                             >
                                                 Add to bag
                                             </button>
@@ -205,14 +203,14 @@ function ViewPart() {
                                                             <h3>
                                                                 <Disclosure.Button className="group relative w-full py-6 flex justify-between items-center text-left">
                                                                     <span
-                                                                        className={classNames(open ? 'text-indigo-600' : 'text-gray-900', 'text-sm font-medium')}
+                                                                        className={classNames(open ? 'text-[#679CE8]' : 'text-gray-900', 'text-sm font-medium')}
                                                                     >
                                                                         {detail.name}
                                                                     </span>
                                                                     <span className="ml-6 flex items-center">
                                                                         {open ? (
                                                                             <MinusSmIcon
-                                                                                className="block h-6 w-6 text-indigo-400 group-hover:text-indigo-500"
+                                                                                className="block h-6 w-6 text-[#679CE8] group-hover:text-[#4586E1]"
                                                                                 aria-hidden="true"
                                                                             />
                                                                         ) : (
