@@ -4,17 +4,13 @@ import TopNavbar from "../../Components/TopNavbar.js"
 import { Fragment, useState } from 'react'
 import { Dialog, Menu, Transition } from '@headlessui/react'
 import {
-  BellIcon,
-  MenuAlt1Icon,
   ScaleIcon,
 } from '@heroicons/react/outline'
 import {
   CashIcon,
   CheckCircleIcon,
-  ChevronDownIcon,
   ChevronRightIcon,
   OfficeBuildingIcon,
-  SearchIcon,
 } from '@heroicons/react/solid'
 
 const cards = [
