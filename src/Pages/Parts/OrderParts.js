@@ -1,5 +1,7 @@
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
+import { useState } from 'react';
+
 const parts = [
     {
         id: 1,
@@ -8,98 +10,98 @@ const parts = [
         machineSerial: 'M-4930',
         companyName: 'FILTEC',
         price: 2.00,
-        quantity: 2,
+        quantity: '',
         isCurrent: false,
     },
     {
-        id: 2,
+        id: '',
         name: 'Belt',
         partNumber: 'P-889333',
         machineSerial: 'M-6222344',
         companyName: 'Douglas',
         price: 4.00,
-        quantity: 2,
-        isCurrent: true,
+        quantity: '',
+        isCurrent: false,
     },
     {
-        id: 1,
+        id: 3,
         name: 'Gear',
         partNumber: 'P-23453',
         machineSerial: 'M-4930',
         companyName: 'FILTEC',
         price: 2.00,
-        quantity: 2,
+        quantity: '',
         isCurrent: false,
     },
     {
-        id: 2,
+        id: 4,
         name: 'Belt',
         partNumber: 'P-889333',
         machineSerial: 'M-6222344',
         companyName: 'Douglas',
         price: 4.00,
-        quantity: 2,
-        isCurrent: true,
+        quantity: '',
+        isCurrent: false,
     },
     {
-        id: 1,
+        id: 5,
         name: 'Gear',
         partNumber: 'P-23453',
         machineSerial: 'M-4930',
         companyName: 'FILTEC',
         price: 2.00,
-        quantity: 2,
+        quantity: '',
         isCurrent: false,
     },
     {
-        id: 2,
+        id: 6,
         name: 'Belt',
         partNumber: 'P-889333',
         machineSerial: 'M-6222344',
         companyName: 'Douglas',
         price: 4.00,
-        quantity: 2,
-        isCurrent: true,
+        quantity: '',
+        isCurrent: false,
     },
     {
-        id: 1,
+        id: 7,
         name: 'Gear',
         partNumber: 'P-23453',
         machineSerial: 'M-4930',
         companyName: 'FILTEC',
         price: 2.00,
-        quantity: 2,
+        quantity: '',
         isCurrent: false,
     },
     {
-        id: 2,
+        id: 8,
         name: 'Belt',
         partNumber: 'P-889333',
         machineSerial: 'M-6222344',
         companyName: 'Douglas',
         price: 4.00,
-        quantity: 2,
-        isCurrent: true,
+        quantity: '',
+        isCurrent: false,
     },
     {
-        id: 1,
+        id: 9,
         name: 'Gear',
         partNumber: 'P-23453',
         machineSerial: 'M-4930',
         companyName: 'FILTEC',
         price: 2.00,
-        quantity: 2,
+        quantity: '',
         isCurrent: false,
     },
     {
-        id: 2,
+        id: 10,
         name: 'Belt',
         partNumber: 'P-889333',
         machineSerial: 'M-6222344',
         companyName: 'Douglas',
         price: 4.00,
-        quantity: 2,
-        isCurrent: true,
+        quantity: '',
+        isCurrent: false,
     },
 ]
 
@@ -109,13 +111,14 @@ function classNames(...classes) {
 
 
 function OrderParts() {
+    const [quantity, setQuantity] = useState('');
 
-const totalPrice = () => {
-    parts.map((part) => {
-       return part.price * part.quantity
-    })
-}
-
+    function handleSubmit(e) {
+        e.preventDefault();
+        const orderQuantity = {
+            quantity,
+        }
+    }
 
     return (
         <>
@@ -166,7 +169,7 @@ const totalPrice = () => {
                             <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                                 <button
                                     type="button"
-                                    className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-[#679CE8] focus:ring-offset-2 sm:w-auto"
+                                    className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#5ED797] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#28cf76] focus:outline-none focus:ring-2 focus:ring-[#5ED797] focus:ring-offset-2 sm:w-auto"
                                 >
                                     Add to cart
                                 </button>
@@ -203,9 +206,9 @@ const totalPrice = () => {
                                         <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                                             Quantity
                                         </th>
-                                        <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                            Price
-                                        </th>
+                                        {/* <th scope="col" className="px-3 py-3.5 text-left text-sm font-extrabold text-gray-900">
+                                            Total
+                                        </th> */}
                                         <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
                                             <span className="sr-only">Select</span>
                                         </th>
@@ -260,7 +263,7 @@ const totalPrice = () => {
                                             <td
                                                 className={classNames(
                                                     partIdx === 0 ? '' : 'border-t border-gray-200',
-                                                    'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
+                                                    'px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
                                                 )}
                                             >
                                                 ${part.price}
@@ -268,29 +271,27 @@ const totalPrice = () => {
                                             <td
                                                 className={classNames(
                                                     partIdx === 0 ? '' : 'border-t border-gray-200',
-                                                    'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
+                                                    'px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
                                                 )}
                                             >
-                                                <div className="w-16 sm:w-8">
+                                                <div className="w-16">
                                                     <input
-                                                        type="quantity"
+                                                        type="text"
                                                         name="quantity"
                                                         id="quantity"
-                                                        className="shadow-sm focus:ring-[#5ED797] focus:border-[#28cf76] block w-full sm:text-sm border-gray-300 rounded-md"
+                                                        className="shadow-sm focus:ring-[#679CE8] focus:border-[#4586e1] block w-full sm:text-sm border-gray-300 rounded-md placeholder-[#679CE8] placeholder-opacity-75"
                                                         placeholder="Qty."
-                                                        value={part.quantity}
                                                     />
                                                 </div>
                                             </td>
-                                            <td
+                                            {/* <td
                                                 className={classNames(
                                                     partIdx === 0 ? '' : 'border-t border-gray-200',
                                                     'px-3 py-3.5 text-sm text-gray-500'
                                                 )}
                                             >
-                                                <div className="sm:hidden">{part.price * part.quantity}</div>
                                                 <div className="hidden sm:block">${part.price * part.quantity}</div>
-                                            </td>
+                                            </td> */}
                                             <td
                                                 className={classNames(
                                                     partIdx === 0 ? '' : 'border-t border-transparent',
