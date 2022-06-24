@@ -6,13 +6,14 @@ const orders = [
     date: 'January 22, 2021',
     datetime: '2021-01-22',
     invoiceHref: 'Order_Details',
-    total: '$952.00',
+    total: (70*2*2),
     products: [
       {
         id: 1,
         name: 'Ball and joint',
         href: 'View_Part',
-        price: '$70.00',
+        price: 70.00,
+        quantity: 2,
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
         imageAlt: 'Detail of mechanical pencil tip with machined black steel shaft and chrome lead tip.',
@@ -21,7 +22,8 @@ const orders = [
         id: 2,
         name: 'Gear',
         href: 'View_Part',
-        price: '$70.00',
+        price: 70.00,
+        quantity: 2,
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
         imageAlt: 'Detail of mechanical pencil tip with machined black steel shaft and chrome lead tip.',
@@ -33,13 +35,14 @@ const orders = [
     date: 'January 2, 2021',
     datetime: '2021-01-02',
     invoiceHref: 'View_Part',
-    total: '$238.00',
+    total: (70*2),
     products: [
       {
         id: 1,
         name: 'Pen',
         href: '#',
-        price: '$70.00',
+        price: 70.00,
+        quantity: 2,
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
         imageAlt: 'Detail of mechanical pencil tip with machined black steel shaft and chrome lead tip.',
@@ -51,13 +54,14 @@ const orders = [
     date: 'December 22, 2020',
     datetime: '2020-12-22',
     invoiceHref: '#',
-    total: '$238.00',
+    total: (70*2),
     products: [
       {
         id: 1,
         name: 'Motor',
         href: '#',
-        price: '$70.00',
+        price: 70.00,
+        quantity: 2,
         status: 'Delivered Jan 25, 2021',
         imageSrc: 'https://tailwindui.com/img/ecommerce-images/order-history-page-02-product-01.jpg',
         imageAlt: 'Detail of mechanical pencil tip with machined black steel shaft and chrome lead tip.',
@@ -106,7 +110,7 @@ function OrderHistory() {
           <div className="bg-white">
             <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:pb-24 lg:px-8">
               <div className="max-w-xl">
-                <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Order history</h1>
+                <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Order History</h1>
                 <p className="mt-2 text-sm text-gray-500">
                   Check the status of recent orders, manage returns, and download invoices.
                 </p>
@@ -136,7 +140,7 @@ function OrderHistory() {
                           </div>
                           <div className="flex justify-between pt-6 font-medium text-gray-900 sm:block sm:pt-0">
                             <dt>Total amount</dt>
-                            <dd className="sm:mt-1">{order.total}</dd>
+                            <dd className="sm:mt-1">${order.total}</dd>
                           </div>
                         </dl>
                         <a
@@ -156,7 +160,13 @@ function OrderHistory() {
                               Product
                             </th>
                             <th scope="col" className="hidden w-1/5 pr-8 py-3 font-normal sm:table-cell">
-                              Price
+                              Price/Unit
+                            </th>
+                            <th scope="col" className="hidden w-1/5 pr-8 py-3 font-normal sm:table-cell">
+                              Quantity
+                            </th>
+                            <th scope="col" className="hidden w-1/5 pr-8 py-3 font-normal sm:table-cell">
+                              Total
                             </th>
                             <th scope="col" className="hidden pr-8 py-3 font-normal sm:table-cell">
                               Status
@@ -178,11 +188,13 @@ function OrderHistory() {
                                   />
                                   <div>
                                     <div className="font-medium text-gray-900">{product.name}</div>
-                                    <div className="mt-1 sm:hidden">{product.price}</div>
+                                    <div className="mt-1 sm:hidden">${product.price}</div>
                                   </div>
                                 </div>
                               </td>
-                              <td className="hidden py-6 pr-8 sm:table-cell">{product.price}</td>
+                              <td className="hidden py-6 pr-8 sm:table-cell">${product.price}</td>
+                              <td className="hidden py-6 pr-8 sm:table-cell">{product.quantity}</td>
+                              <td className="hidden py-6 pr-8 sm:table-cell">${product.price * product.quantity}</td>
                               <td className="hidden py-6 pr-8 sm:table-cell">{product.status}</td>
                               <td className="py-6 font-medium text-right whitespace-nowrap">
                                 <a href={product.href} className="text-[#679CE8]">

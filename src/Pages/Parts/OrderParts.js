@@ -160,7 +160,7 @@ function OrderParts() {
                     <div className="px-4 sm:px-6 lg:px-8">
                         <div className="sm:flex sm:items-center">
                             <div className="sm:flex-auto">
-                                <h1 className="text-2xl font-semibold text-gray-900">Order Parts</h1>
+                                <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Order Parts</h1>
                                 <p className="mt-2 text-sm text-gray-700">
                                     Your team is on the <strong className="font-semibold text-gray-900">Tier 2</strong> plan. The next payment
                                     of $80,000.00 will be due on August 4, 2022.
