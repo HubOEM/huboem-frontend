@@ -109,11 +109,14 @@ function classNames(...classes) {
 
 
 function OrderParts() {
-    function totalPrice() {
-        return parts.map((part) => (
-            part.price * part.quantity
-        ))
-    }
+
+const totalPrice = () => {
+    parts.map((part) => {
+       return part.price * part.quantity
+    })
+}
+
+
     return (
         <>
             <div className="min-h-full pb-24 pl-24 pr-24">
@@ -163,9 +166,9 @@ function OrderParts() {
                             <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                                 <button
                                     type="button"
-                                    className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                                    className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-[#679CE8] focus:ring-offset-2 sm:w-auto"
                                 >
-                                    Update credit card
+                                    Add to cart
                                 </button>
                             </div>
                         </div>
@@ -268,7 +271,16 @@ function OrderParts() {
                                                     'hidden px-3 py-3.5 text-sm text-gray-500 lg:table-cell'
                                                 )}
                                             >
-                                                {part.quantity}
+                                                <div className="w-16 sm:w-8">
+                                                    <input
+                                                        type="quantity"
+                                                        name="quantity"
+                                                        id="quantity"
+                                                        className="shadow-sm focus:ring-[#5ED797] focus:border-[#28cf76] block w-full sm:text-sm border-gray-300 rounded-md"
+                                                        placeholder="Qty."
+                                                        value={part.quantity}
+                                                    />
+                                                </div>
                                             </td>
                                             <td
                                                 className={classNames(
@@ -276,8 +288,8 @@ function OrderParts() {
                                                     'px-3 py-3.5 text-sm text-gray-500'
                                                 )}
                                             >
-                                                <div className="sm:hidden">{totalPrice()}</div>
-                                                <div className="hidden sm:block">{totalPrice()}</div>
+                                                <div className="sm:hidden">{part.price * part.quantity}</div>
+                                                <div className="hidden sm:block">${part.price * part.quantity}</div>
                                             </td>
                                             <td
                                                 className={classNames(
@@ -287,7 +299,7 @@ function OrderParts() {
                                             >
                                                 <button
                                                     type="button"
-                                                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
+                                                    className="inline-flex items-center rounded-md border border-gray-300 bg-white px-3 py-2 text-sm font-medium leading-4 text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[679CE8] focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
                                                     disabled={part.isCurrent}
                                                 >
                                                     Select<span className="sr-only">, {part.name}</span>
