@@ -1,10 +1,10 @@
 import { useLayoutEffect, useRef, useState } from 'react'
-import { ChevronDownIcon } from '@heroicons/react/solid'
+
 
 
 const parts = [
     {
-        name: 'Billy boy',
+        name: 'Albert',
         serialPart: '234334',
         serialMachine: '789990',
         company: 'Big company co',
@@ -13,7 +13,7 @@ const parts = [
         price: '$45.45',
     },
     {
-        name: 'Billy boy',
+        name: 'Bobby',
         serialPart: '234334',
         serialMachine: '789990',
         company: 'Big company co',
@@ -22,7 +22,7 @@ const parts = [
         price: '$45.45',
     },
     {
-        name: 'Billy boy',
+        name: 'Colton',
         serialPart: '234334',
         serialMachine: '789990',
         company: 'Big company co',
@@ -31,7 +31,7 @@ const parts = [
         price: '$45.45',
     },
     {
-        name: 'Billy boy',
+        name: 'Darien',
         serialPart: '234334',
         serialMachine: '789990',
         company: 'Big company co',
@@ -40,7 +40,7 @@ const parts = [
         price: '$45.45',
     },
     {
-        name: 'Billy boy',
+        name: 'Evelin',
         serialPart: '234334',
         serialMachine: '789990',
         company: 'Big company co',
@@ -49,7 +49,7 @@ const parts = [
         price: '$45.45',
     },
     {
-        name: 'Billy boy',
+        name: 'Frank',
         serialPart: '234334',
         serialMachine: '789990',
         company: 'Big company co',
@@ -82,7 +82,14 @@ function RecurringOrders() {
         setIndeterminate(false)
     }
 
+    const editable = useState(false)
+
+    function handleEdit() {
+        return !editable
+    }
+
     return (
+
         <>
             <div className="min-h-full pb-24 pl-24 pr-24">
                 <div className="lg:pl-64 flex flex-col flex-1">
@@ -104,7 +111,7 @@ function RecurringOrders() {
                                     <select
                                         id="type"
                                         name="type"
-                                        className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                        className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-[#4586e1] focus:border-[#4586e1] sm:text-sm"
                                         defaultValue="Serial Number"
                                     >
                                         <option>Machine (Serial #)</option>
@@ -129,7 +136,7 @@ function RecurringOrders() {
                             <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                                 <button
                                     type="button"
-                                    className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                                    className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-[#4586e1] focus:ring-offset-2 sm:w-auto"
                                 >
                                     Add part
                                 </button>
@@ -143,13 +150,13 @@ function RecurringOrders() {
                                             <div className="absolute top-0 left-12 flex h-12 items-center space-x-3 bg-gray-50 sm:left-16">
                                                 <button
                                                     type="button"
-                                                    className="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
+                                                    className="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#4586e1] focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
                                                 >
                                                     Bulk edit
                                                 </button>
                                                 <button
                                                     type="button"
-                                                    className="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
+                                                    className="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#4586e1] focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-30"
                                                 >
                                                     Delete all
                                                 </button>
@@ -161,7 +168,7 @@ function RecurringOrders() {
                                                     <th scope="col" className="relative w-12 px-6 sm:w-16 sm:px-8">
                                                         <input
                                                             type="checkbox"
-                                                            className="absolute left-4 top-1/2 -mt-2 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 sm:left-6"
+                                                            className="absolute left-4 top-1/2 -mt-2 h-4 w-4 rounded border-gray-300 text-[#569CE8] focus:ring-[#4586e1] sm:left-6"
                                                             ref={checkbox}
                                                             checked={checked}
                                                             onChange={toggleAll}
@@ -195,14 +202,14 @@ function RecurringOrders() {
                                             </thead>
                                             <tbody className="divide-y divide-gray-200 bg-white">
                                                 {parts.map((part) => (
-                                                    <tr key={part.email} className={selectedPart.includes(part) ? 'bg-gray-50' : undefined}>
+                                                    <tr key={part.name} className={selectedPart.includes(part) ? 'bg-gray-50' : undefined}>
                                                         <td className="relative w-12 px-6 sm:w-16 sm:px-8">
                                                             {selectedPart.includes(part) && (
-                                                                <div className="absolute inset-y-0 left-0 w-0.5 bg-indigo-600" />
+                                                                <div className="absolute inset-y-0 left-0 w-0.5 bg-[#569CE8]" />
                                                             )}
                                                             <input
                                                                 type="checkbox"
-                                                                className="absolute left-4 top-1/2 -mt-2 h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500 sm:left-6"
+                                                                className="absolute left-4 top-1/2 -mt-2 h-4 w-4 rounded border-gray-300 text-[#569CE8] focus:ring-[#4586e1] sm:left-6"
                                                                 value={part.serialPart && part.company}
                                                                 checked={selectedPart.includes(part)}
                                                                 onChange={(e) =>
@@ -217,7 +224,7 @@ function RecurringOrders() {
                                                         <td
                                                             className={classNames(
                                                                 'whitespace-nowrap py-4 pr-3 text-sm font-medium',
-                                                                selectedPart.includes(part) ? 'text-indigo-600' : 'text-gray-900'
+                                                                selectedPart.includes(part) ? 'text-[#569CE8]' : 'text-gray-900'
                                                             )}
                                                         >
                                                             {part.name}
@@ -229,9 +236,9 @@ function RecurringOrders() {
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.frequency}</td>
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.price}</td>
                                                         <td className="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                                                            <a href="#" className="text-[#679CE8] hover:text-[#4586e1]">
+                                                            <button onClick={handleEdit} className="text-[#679CE8] hover:text-[#4586e1]">
                                                                 Edit<span className="sr-only">, {part.name}</span>
-                                                            </a>
+                                                            </button>
                                                         </td>
                                                     </tr>
                                                 ))}
