@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        apple: '0 1px 3px rgba(0, 0, 0, 0.3)',
+      },
       colors: {
         cyan: colors.cyan,
         sky: colors.sky,

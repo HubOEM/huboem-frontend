@@ -174,7 +174,7 @@ function RecurringOrders() {
                                                             onChange={toggleAll}
                                                         />
                                                     </th>
-                                                    <th scope="col" className="min-w-[12rem] py-3.5 pr-3 text-left text-sm font-semibold text-gray-900">
+                                                    <th scope="col" className="min-w-[8rem] py-3.5 pr-3 text-left text-sm font-semibold text-gray-900">
                                                         Name
                                                     </th>
                                                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
@@ -187,14 +187,17 @@ function RecurringOrders() {
                                                         Company
                                                     </th>
                                                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                                        Price
+                                                    </th>
+                                                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
                                                         Quantity
                                                     </th>
                                                     <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                                        Frequency (mo.)
+                                                        Frequency
                                                     </th>
-                                                    <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                                        Price
-                                                    </th>
+                                                    {/* <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                                                        Total
+                                                    </th> */}
                                                     <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
                                                         <span className="sr-only">Edit</span>
                                                     </th>
@@ -232,9 +235,10 @@ function RecurringOrders() {
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.serialMachine}</td>
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.serialPart}</td>
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.company}</td>
-                                                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.quantity}</td>
-                                                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.frequency}</td>
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.price}</td>
+                                                        <td className="whitespace-nowrap px-3 py-4 text-center text-sm text-gray-500">{part.quantity}</td>
+                                                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.frequency} month</td>
+                                                        {/* <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.price}</td> */}
                                                         <td className="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                                                             <button onClick={handleEdit} className="text-[#679CE8] hover:text-[#4586e1]">
                                                                 Edit<span className="sr-only">, {part.name}</span>
