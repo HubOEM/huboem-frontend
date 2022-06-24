@@ -64,6 +64,7 @@ function classNames(...classes) {
 }
 
 function RecurringOrders() {
+    const [editable, setEditable] = useState(false)
     const checkbox = useRef()
     const [checked, setChecked] = useState(false)
     const [indeterminate, setIndeterminate] = useState(false)
@@ -82,14 +83,12 @@ function RecurringOrders() {
         setIndeterminate(false)
     }
 
-    const editable = useState(false)
 
     function handleEdit() {
-        return !editable
+        setEditable(!editable)
     }
 
     return (
-
         <>
             <div className="min-h-full pb-24 pl-24 pr-24">
                 <div className="lg:pl-64 flex flex-col flex-1">
@@ -236,8 +235,37 @@ function RecurringOrders() {
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.serialPart}</td>
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.company}</td>
                                                         <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.price}</td>
-                                                        <td className="whitespace-nowrap px-3 py-4 text-center text-sm text-gray-500">{part.quantity}</td>
-                                                        <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.frequency} month</td>
+                                                        <td className="whitespace-nowrap px-3 py-4 text-center text-sm text-gray-500">
+                                                            {editable ? (
+                                                                <div className="w-16">
+                                                                    <input
+                                                                        type="text"
+                                                                        name="quantity"
+                                                                        id="quantity"
+                                                                        className="shadow-apple focus:ring-[#679CE8] focus:border-[#4586e1] block w-full sm:text-sm border-gray-300 rounded-md placeholder-[#679CE8] placeholder-opacity-50"
+                                                                        placeholder="Qty."
+                                                                    />
+                                                                </div>
+                                                            ) : (
+                                                                <div>{part.quantity}</div>
+                                                            )}
+                                                        </td>
+                                                        <td className="whitespace-nowrap px-3 py-4 text-center text-sm text-gray-500">
+                                                            {editable ? (
+                                                                <div className="w-16">
+                                                                    <input
+                                                                        type="text"
+                                                                        name="quantity"
+                                                                        id="quantity"
+                                                                        className="shadow-apple focus:ring-[#679CE8] focus:border-[#4586e1] block w-full sm:text-sm border-gray-300 rounded-md placeholder-[#679CE8] placeholder-opacity-50"
+                                                                        placeholder="(mo)"
+                                                                    />
+                                                                </div>
+                                                            ) : (
+                                                                <div>{part.frequency}</div>
+                                                            )}
+                                                        </td>
+                                                        {/* <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500"> month</td> */}
                                                         {/* <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{part.price}</td> */}
                                                         <td className="whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
                                                             <button onClick={handleEdit} className="text-[#679CE8] hover:text-[#4586e1]">
