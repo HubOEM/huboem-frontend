@@ -5,48 +5,22 @@ function RequestServices() {
         <>
             <div className="min-h-full pb-24 pl-24 pr-24">
                 <div className="lg:pl-64 flex flex-col flex-1">
-                    <div className="bg-white mt-24 mb-16">
-                        {/* <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
-                            <div className="max-w-xl">
-                                <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-                                    Request Services
-                                </h2>
-                                <p className="mt-5 text-xl text-gray-500">
-                                    IDK
+                    <div className="px-4 sm:px-6 lg:px-8">
+                        <div className="bg-white mt-24 mb-16">
+                            <div className="sm:flex-auto">
+                                <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Request Services</h1>
+                                <p className="mt-2 text-sm text-gray-700">
+                                    Your team is on the <strong className="font-semibold text-gray-900">Tier 2</strong> plan.
+                                    You have 2 services scheduled for the next month.
                                 </p>
                             </div>
-                            <div className="mt-10 w-full max-w-xs">
-                                <label htmlFor="type" className="block text-base font-medium text-gray-500">
-                                    Sort by
-                                </label>
-                                <div className="mt-1.5 relative">
-                                    <select
-                                        id="type"
-                                        name="type"
-                                        className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                                        defaultValue="Serial Number"
-                                    >
-                                        <option>Machine (Serial #)</option>
-                                        <option>Company</option>
-                                        <option>Time frame</option>
-                                    </select>
-                                    <div className="pointer-events-none absolute inset-y-0 right-0 px-2 flex items-center">
-                                        <ChevronDownIcon className="h-4 w-4 text-gray-400" aria-hidden="true" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div> */}
-                        <div className="sm:flex-auto">
-                            <h1 className="text-2xl font-semibold text-gray-900">Order Parts</h1>
                         </div>
-                    </div>
-                    <div>
                         <div className="md:grid md:grid-cols-3 md:gap-6">
                             <div className="md:col-span-1">
                                 <div className="px-4 sm:px-0">
                                     <h3 className="text-lg font-medium leading-6 text-gray-900">Machine</h3>
                                     <p className="mt-1 text-sm text-gray-600">
-                                        This information will be displayed publicly so be careful what you share.
+                                        Select a machine to get started.
                                     </p>
                                 </div>
                             </div>
@@ -67,7 +41,7 @@ function RequestServices() {
                                                             type="text"
                                                             name="company-website"
                                                             id="company-website"
-                                                            className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
+                                                            className="focus:ring-[#679CE8] focus:border-[#679CE8] flex-1 block w-full rounded-none rounded-r-md sm:text-sm border-gray-300"
                                                             placeholder="Serial number..."
                                                         />
                                                     </div>
@@ -83,7 +57,7 @@ function RequestServices() {
                                                         id="about"
                                                         name="about"
                                                         rows={3}
-                                                        className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
+                                                        className="shadow-sm focus:ring-[#679CE8] focus:border-[#679CE8] mt-1 block w-full sm:text-sm border border-gray-300 rounded-md"
                                                         placeholder="Describe your problem..."
                                                         defaultValue={''}
                                                     />
@@ -103,7 +77,7 @@ function RequestServices() {
                                                 </span>
                                                 <button
                                                     type="button"
-                                                    className="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                    className="ml-5 bg-white py-2 px-3 border border-gray-300 rounded-md shadow-sm text-sm leading-4 font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                                 >
                                                     Change
                                                 </button>
@@ -131,7 +105,7 @@ function RequestServices() {
                                                         <div className="flex text-sm text-gray-600">
                                                             <label
                                                                 htmlFor="file-upload"
-                                                                className="relative cursor-pointer bg-white rounded-md font-medium text-[#679CE8] hover:text-[#4586e1] focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-indigo-500"
+                                                                className="relative cursor-pointer bg-white rounded-md font-medium text-[#679CE8] hover:text-[#4586e1] focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-[#679CE8]"
                                                             >
                                                                 <span>Upload a file</span>
                                                                 <input id="file-upload" name="file-upload" type="file" className="sr-only" />
@@ -146,7 +120,7 @@ function RequestServices() {
                                         <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                                             <button
                                                 type="submit"
-                                                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                             >
                                                 Save
                                             </button>
@@ -185,7 +159,7 @@ function RequestServices() {
                                                     name="first-name"
                                                     id="first-name"
                                                     autoComplete="given-name"
-                                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                                 />
                                             </div>
 
@@ -198,7 +172,7 @@ function RequestServices() {
                                                     name="last-name"
                                                     id="last-name"
                                                     autoComplete="family-name"
-                                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                                 />
                                             </div>
 
@@ -211,7 +185,7 @@ function RequestServices() {
                                                     name="email-address"
                                                     id="email-address"
                                                     autoComplete="email"
-                                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                                 />
                                             </div>
 
@@ -223,7 +197,7 @@ function RequestServices() {
                                                     id="country"
                                                     name="country"
                                                     autoComplete="country-name"
-                                                    className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                                    className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-[#679CE8] focus:border-[#679CE8] sm:text-sm"
                                                 >
                                                     <option>United States</option>
                                                     <option>Canada</option>
@@ -240,7 +214,7 @@ function RequestServices() {
                                                     name="street-address"
                                                     id="street-address"
                                                     autoComplete="street-address"
-                                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                                 />
                                             </div>
 
@@ -253,7 +227,7 @@ function RequestServices() {
                                                     name="city"
                                                     id="city"
                                                     autoComplete="address-level2"
-                                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                                 />
                                             </div>
 
@@ -266,7 +240,7 @@ function RequestServices() {
                                                     name="region"
                                                     id="region"
                                                     autoComplete="address-level1"
-                                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                                 />
                                             </div>
 
@@ -279,7 +253,7 @@ function RequestServices() {
                                                     name="postal-code"
                                                     id="postal-code"
                                                     autoComplete="postal-code"
-                                                    className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                                                    className="mt-1 focus:ring-[#679CE8] focus:border-[#679CE8] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                                                 />
                                             </div>
                                         </div>
@@ -287,7 +261,7 @@ function RequestServices() {
                                     <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                                         <button
                                             type="submit"
-                                            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                            className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                         >
                                             Save
                                         </button>
@@ -328,7 +302,7 @@ function RequestServices() {
                                                                 id="comments"
                                                                 name="comments"
                                                                 type="checkbox"
-                                                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                                className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300 rounded"
                                                             />
                                                         </div>
                                                         <div className="ml-3 text-sm">
@@ -344,7 +318,7 @@ function RequestServices() {
                                                                 id="candidates"
                                                                 name="candidates"
                                                                 type="checkbox"
-                                                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                                className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300 rounded"
                                                             />
                                                         </div>
                                                         <div className="ml-3 text-sm">
@@ -360,7 +334,7 @@ function RequestServices() {
                                                                 id="offers"
                                                                 name="offers"
                                                                 type="checkbox"
-                                                                className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded"
+                                                                className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300 rounded"
                                                             />
                                                         </div>
                                                         <div className="ml-3 text-sm">
@@ -374,28 +348,28 @@ function RequestServices() {
                                             </fieldset>
                                             <fieldset>
                                                 <legend className="contents text-base font-medium text-gray-900">Push Notifications</legend>
-                                                <p className="text-sm text-gray-500">These are delivered via SMS to your mobile phone.</p>
+                                                <p className="text-sm text-gray-500">Text, desktop, or neither.</p>
                                                 <div className="mt-4 space-y-4">
                                                     <div className="flex items-center">
                                                         <input
                                                             id="push-everything"
                                                             name="push-notifications"
                                                             type="radio"
-                                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                                                            className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300"
                                                         />
                                                         <label htmlFor="push-everything" className="ml-3 block text-sm font-medium text-gray-700">
-                                                            Everything
+                                                            Text
                                                         </label>
                                                     </div>
                                                     <div className="flex items-center">
                                                         <input
-                                                            id="push-email"
+                                                            id="push-everything"
                                                             name="push-notifications"
                                                             type="radio"
-                                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                                                            className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300"
                                                         />
-                                                        <label htmlFor="push-email" className="ml-3 block text-sm font-medium text-gray-700">
-                                                            Same as email
+                                                        <label htmlFor="push-everything" className="ml-3 block text-sm font-medium text-gray-700">
+                                                            Desktop
                                                         </label>
                                                     </div>
                                                     <div className="flex items-center">
@@ -403,7 +377,7 @@ function RequestServices() {
                                                             id="push-nothing"
                                                             name="push-notifications"
                                                             type="radio"
-                                                            className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300"
+                                                            className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300"
                                                         />
                                                         <label htmlFor="push-nothing" className="ml-3 block text-sm font-medium text-gray-700">
                                                             No push notifications
@@ -415,11 +389,19 @@ function RequestServices() {
                                         <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                                             <button
                                                 type="submit"
-                                                className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                                className="inline-flex justify-end py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#679CE8] hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
                                             >
                                                 Save
                                             </button>
                                         </div>
+                                    </div>
+                                    <div className="text-right">
+                                        <button
+                                            type="submit"
+                                            className="mt-16 mr-4 px-10 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#5ED797] hover:bg-[#28cf76] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
+                                        >
+                                            Submit
+                                        </button>
                                     </div>
                                 </form>
                             </div>
