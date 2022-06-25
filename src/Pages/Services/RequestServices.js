@@ -374,6 +374,17 @@ function RequestServices() {
                                                     </div>
                                                     <div className="flex items-center">
                                                         <input
+                                                            id="push-everything"
+                                                            name="push-notifications"
+                                                            type="radio"
+                                                            className="focus:ring-[#679CE8] h-4 w-4 text-[#679CE8] border-gray-300"
+                                                        />
+                                                        <label htmlFor="push-everything" className="ml-3 block text-sm font-medium text-gray-700">
+                                                            Both
+                                                        </label>
+                                                    </div>
+                                                    <div className="flex items-center">
+                                                        <input
                                                             id="push-nothing"
                                                             name="push-notifications"
                                                             type="radio"
@@ -395,10 +406,10 @@ function RequestServices() {
                                             </button>
                                         </div>
                                     </div>
-                                    <div className="text-right">
+                                    <div className="grid row">
                                         <button
                                             type="submit"
-                                            className="mt-16 mr-4 px-10 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#5ED797] hover:bg-[#28cf76] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8]"
+                                            className="mt-16 py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-[#5ED797] hover:bg-[#28cf76] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5ED797]"
                                         >
                                             Submit
                                         </button>

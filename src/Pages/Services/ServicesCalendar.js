@@ -91,15 +91,20 @@ function ServicesCalendar() {
         <>
             <div className="min-h-full pb-24 pl-24 pr-24">
                 <div className="lg:pl-64 flex flex-col flex-1">
-                    <div className="bg-white">
-                        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
-                            <div className="max-w-xl">
-                                <h2 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl">
-                                    Services Calendar
-                                </h2>
-                                <p className="mt-5 text-xl text-gray-500">
-                                    IDK
-                                </p>
+                    <div className="bg-white py-16">
+                        <div className="">
+                            <h1 className="text-6xl font-extrabold tracking-tight text-gray-900">Services Calendar</h1>
+                            <h5 className="text-gray-900">You have had 3 services in the past month.</h5>
+                        </div>
+                        {/* <div className="max-w-7xl mx-auto pt-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
+                            <div className="px-4 sm:px-6 lg:px-8">
+                                <div className="sm:flex-auto">
+                                    <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Services History</h1>
+                                    <p className="mt-2 text-sm text-gray-700">
+                                        Your team is on the <strong className="font-semibold text-gray-900">Tier 2</strong> plan.
+                                        You have had 3 services scheduled in the past month.
+                                    </p>
+                                </div>
                             </div>
                             <div className="mt-10 w-full max-w-xs">
                                 <label htmlFor="type" className="block text-base font-medium text-gray-500">
@@ -121,7 +126,7 @@ function ServicesCalendar() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="lg:flex lg:h-full lg:flex-col">
                         <header className="relative z-20 flex items-center justify-between border-b border-gray-200 py-4 px-6 lg:flex-none">

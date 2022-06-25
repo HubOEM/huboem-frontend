@@ -1,4 +1,5 @@
 import { ChevronDownIcon } from '@heroicons/react/solid'
+import { useNavigate } from 'react-router-dom'
 
 const services = [
     {
@@ -60,13 +61,24 @@ const services = [
 ]
 
 function ServicesHistory() {
+    const navigate = useNavigate();
+
+    function requestServices() {
+        navigate("/Request_Services")
+    }
     return (
         <div>
             <div className="min-h-full pt-24 pb-24 pl-24 pr-24">
                 <div className="lg:pl-64 flex flex-col flex-1">
                     <div className="bg-white">
-                        <div className="sm:flex-auto">
-                            <h1 className="text-2xl font-semibold text-gray-900">Services History</h1>
+                        <div className="px-4 sm:px-6 lg:px-8">
+                            <div className="sm:flex-auto">
+                                <h1 className="text-2xl font-extrabold tracking-tight text-gray-900 sm:text-3xl">Services History</h1>
+                                <p className="mt-2 text-sm text-gray-700">
+                                    Your team is on the <strong className="font-semibold text-gray-900">Tier 2</strong> plan.
+                                    You have had 3 services scheduled in the past month.
+                                </p>
+                            </div>
                         </div>
                         {/* <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">
                             <div className="max-w-xl">
@@ -108,6 +120,7 @@ function ServicesHistory() {
                             </div>
                             <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                                 <button
+                                    onClick={requestServices}
                                     type="button"
                                     className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
                                 >
