@@ -54,7 +54,7 @@ function DocumentsList() {
                   <select
                     id="type"
                     name="type"
-                    className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-[#679CE8] focus:border-[#679CE8] sm:text-sm"
                     defaultValue="Serial Number"
                   >
                     <option>Machine (Serial #)</option>
@@ -79,7 +79,7 @@ function DocumentsList() {
               <div className="mt-4 sm:mt-0 sm:ml-16 sm:flex-none">
                 <button
                   type="button"
-                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:w-auto"
+                  className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#679CE8] px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-[#679CE8] focus:ring-offset-2 sm:w-auto"
                 >
                   Add user
                 </button>
