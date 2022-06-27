@@ -6,25 +6,24 @@ const locations = [
     {
         name: 'Edinburgh',
         people: [
-            { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
-            { name: 'Courtney Henry', title: 'Designer', email: 'courtney.henry@example.com', role: 'Admin' },
+            { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', phone: '281-324-0887', role: 'Member' },
+            { name: 'Courtney Henry', title: 'Designer', email: 'courtney.henry@example.com', phone: '281-324-0887', role: 'Admin' },
         ],
     },
     {
         name: 'Edinburgh',
         people: [
-            { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
-            { name: 'Courtney Henry', title: 'Designer', email: 'courtney.henry@example.com', role: 'Admin' },
+            { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', phone: '281-324-0887', role: 'Member' },
+            { name: 'Courtney Henry', title: 'Designer', email: 'courtney.henry@example.com', phone: '281-324-0887', role: 'Admin' },
         ],
     },
     {
         name: 'Edinburgh',
         people: [
-            { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', role: 'Member' },
-            { name: 'Courtney Henry', title: 'Designer', email: 'courtney.henry@example.com', role: 'Admin' },
+            { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', phone: '281-324-0887', role: 'Member' },
+            { name: 'Courtney Henry', title: 'Designer', email: 'courtney.henry@example.com', phone: '281-324-0887', role: 'Admin' },
         ],
     },
-    // More people...
 ]
 
 function classNames(...classes) {
@@ -69,7 +68,7 @@ function Contacts() {
                 <div className="px-4 sm:px-6 lg:px-8">
                     <div className="sm:flex sm:items-center">
                         <div className="sm:flex-auto">
-                            <h1 className="text-xl font-semibold text-gray-900">Users</h1>
+                            <h1 className="text-xl font-semibold text-gray-900">People</h1>
                             <p className="mt-2 text-sm text-gray-700">
                                 A list of all the users in your account including their name, title, email and role.
                             </p>
@@ -100,7 +99,7 @@ function Contacts() {
                                                     Email
                                                 </th>
                                                 <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
-                                                    Role
+                                                    Phone
                                                 </th>
                                                 <th scope="col" className="relative py-3.5 pl-3 pr-4 sm:pr-6">
                                                     <span className="sr-only">Edit</span>
@@ -129,9 +128,14 @@ function Contacts() {
                                                             </td>
                                                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.title}</td>
                                                             <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.email}</td>
-                                                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.role}</td>
+                                                            <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{person.phone}</td>
                                                             <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
-                                                                <a href="#" className="text-[#569CE8] hover:text-[#4586e1]">
+                                                                <a href="#" className="shadow-apple w-full flex items-center justify-center bg-[#5ED797] mt-4 py-2 px-2 border border-[#5ED797] rounded-md text-sm font-medium text-gray-700 hover:bg-[#28cf76] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#5ED797] sm:w-auto sm:mt-0">
+                                                                    Message<span className="sr-only">, {person.name}</span>
+                                                                </a>
+                                                            </td>
+                                                            <td className="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-6">
+                                                                <a href="#" className="shadow-apple w-full flex items-center justify-center bg-[#679de8] mt-4 py-2 px-2 border border-[#679CE8] rounded-md text-sm font-medium text-gray-700 hover:bg-[#679de8e0] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#679CE8] sm:w-auto sm:mt-0">
                                                                     Edit<span className="sr-only">, {person.name}</span>
                                                                 </a>
                                                             </td>

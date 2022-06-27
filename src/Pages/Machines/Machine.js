@@ -140,7 +140,7 @@ function Machine() {
 
                                     <form className="mt-6">
                                         {/* Colors */}
-                                        <div>
+                                        {/* <div>
                                             <h3 className="text-sm text-gray-600">Color</h3>
 
                                             <RadioGroup value={selectedColor} onChange={setSelectedColor} className="mt-2">
@@ -173,7 +173,7 @@ function Machine() {
                                                     ))}
                                                 </span>
                                             </RadioGroup>
-                                        </div>
+                                        </div> */}
 
                                         <div className="mt-10 flex flex-col">
                                             <button
