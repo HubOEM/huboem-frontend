@@ -8,7 +8,7 @@ function Machines() {
   return (
     <>
       <div>
-        <div className="min-h-full pb-24 pl-24 pr-24">
+        <div className="min-h-full pl-24 pr-24">
           <div className="lg:pl-64 flex flex-col flex-1">
             <div className="bg-white">
               <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8 lg:flex lg:justify-between">

@@ -1,3 +1,5 @@
+import DouglasMachine from '../../Images/douglasShrinkWrap.webp'
+
 import Footer from "../General/Footer.js"
 import { useState } from 'react'
 import { Disclosure, RadioGroup, Tab } from '@headlessui/react'
@@ -5,17 +7,16 @@ import { StarIcon } from '@heroicons/react/solid'
 import { HeartIcon, MinusSmIcon, PlusSmIcon } from '@heroicons/react/outline'
 
 const product = {
-    name: 'Zip Tote Basket',
-    price: '$140',
+    name: 'Machine',
+    company: 'Douglas Machine',
     rating: 4,
     images: [
         {
             id: 1,
             name: 'Angled view',
-            src: 'https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg',
+            src: 'https://www.refrigeratedfrozenfood.com/ext/resources/Technology-Showcase/Products10/Douglas-Machine-TriVex-SL-Flat-Pack-feature.png?1490291882',
             alt: 'Angled front view with bag zipped and handles upright.',
         },
-        // More images...
     ],
     colors: [
         { name: 'Washed Black', bgColor: 'bg-gray-700', selectedColor: 'ring-gray-700' },
@@ -105,7 +106,7 @@ function Machine() {
 
                                     <div className="mt-3">
                                         <h2 className="sr-only">Product information</h2>
-                                        <p className="text-3xl text-gray-900">{product.price}</p>
+                                        <p className="text-3xl text-gray-900">{product.company}</p>
                                     </div>
 
                                     {/* Reviews */}
@@ -174,12 +175,24 @@ function Machine() {
                                             </RadioGroup>
                                         </div>
 
-                                        <div className="mt-10 flex sm:flex-col1">
+                                        <div className="mt-10 flex flex-col">
                                             <button
                                                 type="submit"
-                                                className="max-w-xs flex-1 bg-[#569CE8] border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-[#4586e1] sm:w-full"
+                                                className="m-2 -ml-3 max-w-xs flex-1 bg-[#569CE8] border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-[#4586e1] sm:w-full"
                                             >
-                                                Add to bag
+                                                Order Parts
+                                            </button>
+                                            <button
+                                                type="submit"
+                                                className="m-2 -ml-3 max-w-xs flex-1 bg-[#569CE8] border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-[#4586e1] sm:w-full"
+                                            >
+                                                Schedule Service
+                                            </button>
+                                            <button
+                                                type="submit"
+                                                className="m-2 -ml-3 max-w-xs flex-1 bg-[#569CE8] border border-transparent rounded-md py-3 px-8 flex items-center justify-center text-base font-medium text-white hover:bg-[#4586e1] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-[#4586e1] sm:w-full"
+                                            >
+                                                View Documents
                                             </button>
 
                                             <button

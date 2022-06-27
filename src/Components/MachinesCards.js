@@ -70,7 +70,7 @@ const people = [
 
 function MachinesCards() {
   return (
-    <div className="min-h-full px-32 pt-28 pb-16">
+    <div className="min-h-full px-32 pt-16 pb-16">
       <div className="lg:pl-64 flex flex-col flex-1">
         <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {people.map((person) => (
@@ -100,7 +100,7 @@ function MachinesCards() {
                       <span className="ml-3">Order Parts</span>
                     </a>
                   </div>
-                  <div className="-ml-px w-0 flex-1 flex">
+                  <div className="-ml-px lg:pl-3 w-0 flex-1 flex">
                     <a
                       href={`${person.hrefRequestServices}`}
                       className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"

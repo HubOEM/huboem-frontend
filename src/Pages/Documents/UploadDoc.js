@@ -18,7 +18,7 @@ function UploadDoc() {
                                     Upload documents for your machine, sub-assemblies, parts, or whatever.
                                 </p>
                             </div>
-                            <div className="mt-10 w-full max-w-xs">
+                            {/* <div className="mt-10 w-full max-w-xs">
                                 <label htmlFor="type" className="block text-base font-medium text-gray-500">
                                     Sort by
                                 </label>
@@ -37,16 +37,16 @@ function UploadDoc() {
                                         <ChevronDownIcon className="h-4 w-4 text-gray-400" aria-hidden="true" />
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                     <div className="space-y-6">
                         <div className="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">
                             <div className="md:grid md:grid-cols-3 md:gap-6">
                                 <div className="md:col-span-1">
-                                    <h3 className="text-lg font-medium leading-6 text-gray-900">Profile</h3>
+                                    <h3 className="text-lg font-medium leading-6 text-gray-900">Document</h3>
                                     <p className="mt-1 text-sm text-gray-500">
-                                        This information will be displayed publicly so be careful what you share.
+                                        This information will be displayed for your organization to see.
                                     </p>
                                 </div>
                                 <div className="mt-5 md:mt-0 md:col-span-2">
@@ -92,7 +92,7 @@ function UploadDoc() {
                                                     name="about"
                                                     rows={3}
                                                     className="shadow-sm focus:ring-[#679CE8] focus:border-[#679CE8] block w-full sm:text-sm border border-gray-300 rounded-md"
-                                                    placeholder="you@example.com"
+                                                    placeholder="Enter notes here..."
                                                     defaultValue={''}
                                                 />
                                             </div>
@@ -100,7 +100,7 @@ function UploadDoc() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-medium text-gray-700">Cover photo</label>
+                                            <label className="block text-sm font-medium text-gray-700">Document Upload</label>
                                             <div className="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
                                                 <div className="space-y-1 text-center">
                                                     <svg
@@ -136,7 +136,7 @@ function UploadDoc() {
                             </div>
                         </div>
 
-                        <div className="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">
+                        {/* <div className="bg-white shadow px-4 py-5 sm:rounded-lg sm:p-6">
                             <div className="md:grid md:grid-cols-3 md:gap-6">
                                 <div className="md:col-span-1">
                                     <h3 className="text-lg font-medium leading-6 text-gray-900">Personal Information</h3>
@@ -363,7 +363,7 @@ function UploadDoc() {
                                     </form>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="flex justify-end">
                             <button
