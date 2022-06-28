@@ -141,10 +141,10 @@ function SettingsPage() {
                       </div>
 
                       {/* Description list with inline editing */}
-                      {/* <General /> */}
-                      {/* <Password /> */}
-                      {/* <Notifications /> */}
-                      {/* <Billing /> */}
+                      <General />
+                      <Password />
+                      <Notifications />
+                      <Billing />
                       <TeamMembers />
                     </div>
                   </div>
