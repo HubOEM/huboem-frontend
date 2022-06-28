@@ -34,7 +34,8 @@ import Messages from "./Pages/Messages/Messages.js"
 import NewMessages from "./Pages/Messages/NewMessages.js"
 import ContactAdmin from "./Pages/Messages/ContactAdmin.js"
 
-import Profile from "./Pages/General/Profile.js"
+import Settings from "./Pages/Settings/SettingsPage.js"
+
 import FAQ from "./Pages/General/FAQ.js"
 
 
@@ -83,7 +84,7 @@ function App() {
           <Route path="/Contact_Admin" element={<ContactAdmin />} />
 
           {/* Profile */}
-          <Route path="/Profile" element={<Profile />} />
+          <Route path="/Settings" element={<Settings />} />
 
           {/* FAQ */}
           <Route path="/FAQ" element={<FAQ />} />

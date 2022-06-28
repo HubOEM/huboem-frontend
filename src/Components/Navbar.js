@@ -72,7 +72,7 @@ const secondaryNavigation = [
   },
 ]
 const tertiaryNavigation = [
-  { name: 'Profile', href: 'Profile', icon: CogIcon },
+  { name: 'Settings', href: 'Settings', icon: CogIcon },
   { name: 'FAQ', href: 'FAQ', icon: QuestionMarkCircleIcon },
 ]
 
