@@ -410,7 +410,7 @@ function Navbar() {
                 <div className='my-4 pt-4 border-t border-gray-200'>
                   {tertiaryNavigation.map((item) =>
                     !item.children ? (
-                      <div key={item.name}>
+                      <div key={item.name} className='my-1'>
                         <a
                           href={item.href}
                           className={classNames(
