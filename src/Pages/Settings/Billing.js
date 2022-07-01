@@ -48,7 +48,7 @@ function Billing() {
             <div className="py-4 sm:py-5 sm:grid sm:grid-cols-3 sm:gap-4">
               <dt className="text-sm font-medium text-gray-500">Billing Address</dt>
               <dd className="mt-1 flex text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                <span className="flex-grow">53829 Aorla Av., Denver, Colorado 92304</span>
+                <span className="flex-grow">53829 Aorla Av, Denver, Colorado 92304</span>
                 <span className="ml-4 flex-shrink-0">
                   <button
                     type="button"
