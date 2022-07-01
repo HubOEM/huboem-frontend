@@ -26,7 +26,7 @@ function Billing() {
         <div className="space-y-1">
           <h3 className="text-lg leading-6 font-medium text-gray-900">Payment Details</h3>
           <p className="max-w-2xl text-sm text-gray-500">
-
+            
           </p>
         </div>
         <div className="mt-6">
