@@ -158,7 +158,7 @@ function Navbar() {
                         </a>
                       ))}
                     </div>
-                    <div className="mt-6 pt-6">
+                    <div className="mt-6 pt-6 ">
                       <div className="px-2 space-y-1">
                         {secondaryNavigation.map((item) => (
                           <a
