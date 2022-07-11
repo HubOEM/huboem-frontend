@@ -175,7 +175,7 @@ function Navbar() {
                 </Dialog.Panel>
               </Transition.Child>
               <div className="flex-shrink-0 w-14" aria-hidden="true">
-                {/* Dummy element to force sidebar to shrink to fit close icon */}
+                {/* Dummy element to force sidebar to shrink to fit close icon, yea*/}
               </div>
             </div>
           </Dialog>
