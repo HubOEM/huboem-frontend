@@ -11,7 +11,7 @@ const products = [
     },
     {
         id: 1,
-        name: 'Fusion',
+        name: 'Fusion Kit',
         category: 'UI Kit',
         href: '#',
         price: '$49',
