@@ -20,7 +20,7 @@ const locations = [
     {
         name: 'Edinburgh',
         people: [
-            { name: 'Lindsay Walton', title: 'Front-end Developer', email: 'lindsay.walton@example.com', phone: '281-324-0887', role: 'Member' },
+            { name: 'Lindsay Walton', title: 'Back-end Developer', email: 'lindsay.walton@example.com', phone: '281-324-0887', role: 'Member' },
             { name: 'Courtney Henry', title: 'Designer', email: 'courtney.henry@example.com', phone: '281-324-0887', role: 'Admin' },
         ],
     },
@@ -54,7 +54,7 @@ function Contacts() {
                                     className="appearance-none block w-full bg-none bg-white border border-gray-300 rounded-md pl-3 pr-10 py-2 text-base text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                     defaultValue="Serial Number"
                                 >
-                                    <option>Machine (Serial #)</option>
+                                    <option>Machine (Serial #) </option>
                                     <option>Company</option>
                                     <option>Time frame</option>
                                 </select>
