@@ -6,7 +6,7 @@ const locations = [
   {
     name: 'FILTEC',
     people: [
-      { name: 'Document 1', title: 'This and that', machine: 'lindsay.walton@example.com', category: 'Manual' },
+      { name: 'Document 1', title: 'This and that', machine: 'lindsay.walton@example.comm', category: 'Manual' },
       { name: 'Document 2', title: 'And the other', machine: 'courtney.henry@example.com', category: 'Parts Chart' },
     ],
   },
