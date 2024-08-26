@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import HashRouter
 import LoginPage from './auth/LoginPage';
 import AdminRoutes from './pages/admin/AdminRoutes';
 import CPGRoutes from './pages/cpg/CPGRoutes';
