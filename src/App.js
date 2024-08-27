@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './auth/LoginPage';
 import AdminRoutes from './pages/admin/AdminRoutes';
 import CPGRoutes from './pages/cpg/CPGRoutes';
@@ -18,6 +18,7 @@ function App() {
           <Route path="/oem/*" element={<OEMRoutes />} />
           <Route path="/distributor/*" element={<DistributorRoutes />} />
           {/* Define the public route */}
+          <Route path="/" element={<LoginPage />} />
           <Route path="/login" element={<LoginPage />} />
           {/* Define the private admin route */}
         </Routes>
