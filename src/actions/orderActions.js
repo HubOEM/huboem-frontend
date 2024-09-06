@@ -1,5 +1,5 @@
-import * as types from '../actionTypes';
-import * as orderService from '../services/orderService';
+import * as types from '../actionTypes.js';
+import * as orderService from '../services/orderService.js';
 
 export const fetchOrders = () => async dispatch => {
   dispatch({ type: types.FETCH_ORDERS_REQUEST });

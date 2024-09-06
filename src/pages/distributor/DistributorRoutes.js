@@ -1,29 +1,29 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Shell from './DistributorShell';
+import Shell from './DistributorShell.js';
 
-import Dashboard from "./Dashboard"
-import Settings from "./Settings"
+import Dashboard from "./Dashboard.js"
+import Settings from "./Settings.js"
 
-import OrdersList from './orders/OrdersList';
-import OrderProfile from './orders/OrderProfile';
-import OrderInvoice from './orders/OrderInvoice';
+import OrdersList from './orders/OrdersList.js';
+import OrderProfile from './orders/OrderProfile.js';
+import OrderInvoice from './orders/OrderInvoice.js';
 
-import Cart from './cart/Cart'
+import Cart from './cart/Cart.js'
 
-import PartProfile from './parts/PartProfile';
+import PartProfile from './parts/PartProfile.js';
 
-import ServicesList from './services/ServicesList';
-import ServiceProfile from './services/ServiceProfile';
-import ServiceItemProfile from './services/ServiceItemProfile';
-import ServiceInvoice from './services/ServiceInvoice';
+import ServicesList from './services/ServicesList.js';
+import ServiceProfile from './services/ServiceProfile.js';
+import ServiceItemProfile from './services/ServiceItemProfile.js';
+import ServiceInvoice from './services/ServiceInvoice.js';
 
 
-import CPGsList from './cpgs/CPGsList'
-import CPGProfile from './cpgs/CPGProfile'
+import CPGsList from './cpgs/CPGsList.js'
+import CPGProfile from './cpgs/CPGProfile.js'
 
-import OEMsList from './oems/OEMsList';
-import OEMProfile from './oems/OEMProfile';
+import OEMsList from './oems/OEMsList.js';
+import OEMProfile from './oems/OEMProfile.js';
 
 
 

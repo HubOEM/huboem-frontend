@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import BulkUpload from './BulkUpload';
-import { parseExcelFile } from './parseExcelFile';
-
-
+import BulkUpload from './BulkUpload.js';
+import { parseExcelFile } from './parseExcelFile.js';
 
 const MachineInfo = () => {
     const [activeTab, setActiveTab] = useState('Orders');

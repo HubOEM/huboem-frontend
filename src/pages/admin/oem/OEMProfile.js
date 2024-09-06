@@ -4,7 +4,7 @@ import {
   MinusIcon,
   PlusIcon,
 } from '@heroicons/react/24/outline'
-import OEMInfo from './OEMInfo'
+import OEMInfo from './OEMInfo.js'
 
 
 const product = {

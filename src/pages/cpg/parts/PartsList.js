@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchParts } from '../../../services/partService';
+import { fetchParts } from '../../../services/partService.js';
 
 function PartsList() {
     const [toggleState, setToggleState] = useState('Place Order');

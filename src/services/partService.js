@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { getToken } from './sessionService';
+import { getToken } from './sessionService.js';
 
 export const fetchParts = async () => {
   try {

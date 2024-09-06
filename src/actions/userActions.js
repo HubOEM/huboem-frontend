@@ -1,5 +1,5 @@
-import { FETCH_USER, UPDATE_USER, DELETE_USER as USER_HEADER } from "./types";
-import userService from '../services/userService'
+import { FETCH_USER, UPDATE_USER, DELETE_USER as USER_HEADER } from "./types.js";
+import userService from '../services/userService.js'
 
 export const fetchUsersRequest = (data) => ({
   type: USER_HEADER.FETCH_USER_REQUEST,

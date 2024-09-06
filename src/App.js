@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LoginPage from './auth/LoginPage';
-import AdminRoutes from './pages/admin/AdminRoutes';
-import CPGRoutes from './pages/cpg/CPGRoutes';
-import OEMRoutes from './pages/oem/OEMRoutes';
-import DistributorRoutes from './pages/distributor/DistributorRoutes';
+import LoginPage from './auth/LoginPage.js';
+import AdminRoutes from './pages/admin/AdminRoutes.js';
+import CPGRoutes from './pages/cpg/CPGRoutes.js';
+import OEMRoutes from './pages/oem/OEMRoutes.js';
+import DistributorRoutes from './pages/distributor/DistributorRoutes.js';
 
 
 function App() {

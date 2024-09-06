@@ -2,29 +2,29 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 
-import Shell from './CPGShell';
+import Shell from './CPGShell.js';
 
-import Dashboard from "./Dashboard"
-import Settings from "./Settings"
+import Dashboard from "./Dashboard.js"
+import Settings from "./Settings.js"
 
-import PartsList from "./parts/PartsList"
-import PartProfile from "./parts/PartProfile"
-import OrderProfile from "./orders/OrderProfile"
-import OrderInvoice from "./orders/OrderInvoice"
+import PartsList from "./parts/PartsList.js"
+import PartProfile from "./parts/PartProfile.js"
+import OrderProfile from "./orders/OrderProfile.js"
+import OrderInvoice from "./orders/OrderInvoice.js"
 
-import ServicesList from "./services/ServicesList"
-import ServiceItemProfile from "./services/ServiceItemProfile"
+import ServicesList from "./services/ServicesList.js"
+import ServiceItemProfile from "./services/ServiceItemProfile.js"
 
-import DocumentsList from "./documents/DocumentsList"
+import DocumentsList from "./documents/DocumentsList.js"
 
-import Cart from "./cart/Cart"
-import OrderConfirmation from "./cart/OrderConfirmation"
+import Cart from "./cart/Cart.js"
+import OrderConfirmation from "./cart/OrderConfirmation.js"
 
-import MyMachines from "./myMachines/MyMachines"
-import MachineProfile from "./myMachines/MachineProfile"
+import MyMachines from "./myMachines/MyMachines.js"
+import MachineProfile from "./myMachines/MachineProfile.js"
 
-import MyVendors from "./myVendors/MyVendors"
-import VendorProfile from "./myVendors/VendorProfile"
+import MyVendors from "./myVendors/MyVendors.js"
+import VendorProfile from "./myVendors/VendorProfile.js"
 
 export default function AdminRoutes() {
     return (

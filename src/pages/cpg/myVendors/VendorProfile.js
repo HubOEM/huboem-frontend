@@ -6,7 +6,7 @@ import {
   PlusIcon,
 } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/20/solid'
-import MyVendorsInfo from './MyVendorsInfo'
+import MyVendorsInfo from './MyVendorsInfo.js'
 
 
 const product = {

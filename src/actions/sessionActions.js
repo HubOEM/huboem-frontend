@@ -1,4 +1,4 @@
-import { CREATE_SESSION as SESSION_HEADER } from "./types";
+import { CREATE_SESSION as SESSION_HEADER } from "./types.js";
 
 export const createSessionRequest = (data) => ({
     type: SESSION_HEADER.CREATE_SESSION_REQUEST,

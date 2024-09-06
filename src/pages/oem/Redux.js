@@ -1,6 +1,6 @@
 import React from 'react';
-import ReduxDocs from './ReduxDocs'
-import ReduxParts from './ReduxParts'
+import ReduxDocs from './ReduxDocs.js'
+import ReduxParts from './ReduxParts.js'
 
 function Redux() {
 

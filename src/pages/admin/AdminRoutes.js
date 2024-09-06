@@ -1,34 +1,34 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Shell from './AdminShell';
+import Shell from './AdminShell.js';
 
-import Dashboard from './Dashboard';
-import Settings from './Settings';
+import Dashboard from './Dashboard.js';
+import Settings from './Settings.js';
 
-import OrdersList from './orders/OrdersList';
-import OrderProfile from './orders/OrderProfile';
-import OrderInvoice from './orders/OrderInvoice';
+import OrdersList from './orders/OrdersList.js';
+import OrderProfile from './orders/OrderProfile.js';
+import OrderInvoice from './orders/OrderInvoice.js';
 
-import PartProfile from './parts/PartProfile';
+import PartProfile from './parts/PartProfile.js';
 
-import ServicesList from './services/ServicesList';
-import ServiceProfile from './services/ServiceProfile';
-import ServiceItemProfile from './services/ServiceItemProfile';
-import ServiceInvoice from './services/ServiceInvoice';
+import ServicesList from './services/ServicesList.js';
+import ServiceProfile from './services/ServiceProfile.js';
+import ServiceItemProfile from './services/ServiceItemProfile.js';
+import ServiceInvoice from './services/ServiceInvoice.js';
 
-import OEMsList from './oem/OEMsList';
-import OEMProfile from './oem/OEMProfile';
-import MachineProfile from './machines/MachineProfile';
+import OEMsList from './oem/OEMsList.js';
+import OEMProfile from './oem/OEMProfile.js';
+import MachineProfile from './machines/MachineProfile.js';
 
-import CPGsList from './cpg/CPGsList';
-import CPGProfile from './cpg/CPGProfile';
+import CPGsList from './cpg/CPGsList.js';
+import CPGProfile from './cpg/CPGProfile.js';
 
-import DistributorsList from './distributor/DistributorsList';
-import DistributorProfile from './distributor/DistributorProfile';
+import DistributorsList from './distributor/DistributorsList.js';
+import DistributorProfile from './distributor/DistributorProfile.js';
 
-import UserGroupsList from './users/UserGroupsList';
-import UsersList from './users/UsersList';
-import UserProfile from './users/UserProfile';
+import UserGroupsList from './users/UserGroupsList.js';
+import UsersList from './users/UsersList.js';
+import UserProfile from './users/UserProfile.js';
 
 export default function AdminRoutes() {
     return (

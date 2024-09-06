@@ -11,7 +11,7 @@ import {
   PlusIcon,
 } from '@heroicons/react/24/outline'
 import { StarIcon } from '@heroicons/react/20/solid'
-import DistributorInfo from './DistributorInfo'
+import DistributorInfo from './DistributorInfo.js'
 
 const product = {
   name: 'West Coast USA',

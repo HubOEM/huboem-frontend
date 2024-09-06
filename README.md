@@ -81,3 +81,9 @@ yarn start
 
 open http://localhost:3001/
 
+
+To deploy on Github Pages:
+yarn predeploy
+yarn deploy
+
+(may need to run 'yarn add gh-pages', 'yarn install', and 'yarn build' again, to get the gh-pages set up)

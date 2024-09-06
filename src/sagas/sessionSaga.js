@@ -1,7 +1,7 @@
 // src/redux/sagas/sessionSagas.js
 import { put, takeLatest } from 'redux-saga/effects';
 // import { call, put, takeLatest } from 'redux-saga/effects';
-import { createSessionRequest, createSessionSuccess, createSessionFailure } from '../redux/slices/sessionSlice';
+import { createSessionRequest, createSessionSuccess, createSessionFailure } from '../redux/slices/sessionSlice.js';
 
 function* handleCreateSession(action) {
   try {
@@ -22,7 +22,7 @@ export default function* sessionSagas() {
 
 // import { sessionActions, types } from "../actions";
 
-// import { createSession } from "../services/sessionService";
+// import { createSession } from "../services/sessionService.js";
 
 // const {
 //     createSessionFailure,

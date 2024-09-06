@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { getToken } from '../../services/sessionService';
+import { getToken } from '../../services/sessionService.js';
 
 function PartsTable() {
     const [partsData, setPartsData] = useState([]);

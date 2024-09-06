@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchUsers } from '../../../actions/userActions';
+import { fetchUsers } from '../../../actions/userActions.js';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');

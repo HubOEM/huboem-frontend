@@ -3,11 +3,11 @@ import { createRoot } from 'react-dom/client'; // Import createRoot from react-d
 import { BrowserRouter } from 'react-router-dom'; // Import BrowserRouter
 import { Provider } from 'react-redux';
 // import configureStore from "./store"
-import store from './redux/store'; // Import the store directly
+import store from './redux/store.js'; // Import the store directly
 
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App.js';
+import reportWebVitals from './reportWebVitals.js';
 // import AdminRoutes from './pages/admin/AdminRoutes'
 
 // const store = configureStore();

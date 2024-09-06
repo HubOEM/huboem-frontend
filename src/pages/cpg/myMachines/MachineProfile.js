@@ -4,7 +4,7 @@ import {
   MinusIcon,
   PlusIcon,
 } from '@heroicons/react/24/outline'
-import MyMachinesInfo from './MyMachinesInfo'
+import MyMachinesInfo from './MyMachinesInfo.js'
 
 
 const product = {

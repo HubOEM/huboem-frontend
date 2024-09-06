@@ -1,5 +1,5 @@
-import * as types from '../actionTypes'; // Import action types
-import documentService from '../services/documentService'; // Import document service
+import * as types from '../actionTypes.js'; // Import action types
+import documentService from '../services/documentService.js'; // Import document service
 
 // Action creators for fetching documents
 export const fetchDocuments = () => async dispatch => {

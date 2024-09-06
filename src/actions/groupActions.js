@@ -1,5 +1,5 @@
-import * as types from '../actionTypes';
-import * as groupService from '../services/groupService';
+import * as types from '../actionTypes.js';
+import * as groupService from '../services/groupService.js';
 
 export const fetchGroups = () => async dispatch => {
   dispatch({ type: types.FETCH_GROUPS_REQUEST });

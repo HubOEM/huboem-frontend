@@ -1,5 +1,5 @@
-import * as types from "./types";
-import * as sessionActions from "./sessionActions"
+import * as types from "./types.js";
+import * as sessionActions from "./sessionActions.js"
 
 export {
     types,

@@ -1,6 +1,6 @@
 import axios from 'axios';
-import { FETCH_PARTS, DELETE_PARTS as PART_HEADER } from './types';
-import { getToken } from '../services/sessionService';
+import { FETCH_PARTS, DELETE_PARTS as PART_HEADER } from './types.js';
+import { getToken } from '../services/sessionService.js';
 
 export const fetchPartsRequest = () => ({
   type: PART_HEADER.FETCH_PARTS_REQUEST

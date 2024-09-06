@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { sessionActions } from '../actions'; // Import the createSession function from the sessionsService file
+import { sessionActions } from '../actions/index.js'; // Import the createSession function from the sessionsService file
 
-import { getUserDetails } from '../services/userService'; // Adjust the import path as needed
+import { getUserDetails } from '../services/userService.js'; // Adjust the import path as needed
 
 
 const { createSessionRequest } = sessionActions;

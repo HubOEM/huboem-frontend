@@ -1,4 +1,4 @@
-import { createActionTypes } from "../utils";
+import { createActionTypes } from "../utils/index.js";
 
 export const CREATE_SESSION = createActionTypes('SESSION', [
     'CREATE_SESSION_REQUEST',
