@@ -86,4 +86,4 @@ To deploy on Github Pages:
 yarn predeploy
 yarn deploy
 
-(may need to run 'yarn add gh-pages', 'yarn install', and 'yarn build' again, to get the gh-pages set up)
+(may need to run 'yarn add gh-pages', 'yarn install', and 'yarn build' again, to get the gh-pages library set up)
