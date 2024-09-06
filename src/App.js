@@ -9,7 +9,7 @@ import DistributorRoutes from './pages/distributor/DistributorRoutes.js';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/huboem-frontend">
       <Fragment>
         <Routes>
           <Route path="/admin/*" element={<AdminRoutes />} /> 
