@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginPage from './auth/LoginPage.js';
 import AdminRoutes from './pages/admin/AdminRoutes.js';
 import CPGRoutes from './pages/cpg/CPGRoutes.js';
@@ -9,7 +10,7 @@ import DistributorRoutes from './pages/distributor/DistributorRoutes.js';
 
 function App() {
   return (
-    <Router basename="/huboem-frontend">
+    <Router basename={process.env.REACT_APP_PUBLIC_URL}>
       <Fragment>
         <Routes>
           <Route path="/admin/*" element={<AdminRoutes />} /> 
